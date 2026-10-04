@@ -278,6 +278,9 @@ const robots = readFileSync(join(dist, 'robots.txt'), 'utf8')
 if (!robots.includes('Sitemap: https://cs2hack.net/sitemap.xml')) {
   fail('robots.txt must point at the canonical HTTPS sitemap')
 }
+if (!robots.includes('Sitemap: https://www.cs2hack.net/sitemap.xml')) {
+  fail('robots.txt must list www sitemap for URL-prefix GSC properties')
+}
 if (!robots.includes('Allow: /sitemap.xml')) {
   fail('robots.txt must explicitly allow /sitemap.xml')
 }
@@ -367,8 +370,8 @@ if (!headers.includes('/sitemap.xml')) {
 if (!headers.includes('application/xml; charset=utf-8')) {
   fail('_headers missing application/xml Content-Type for /sitemap.xml')
 }
-if (!worker.includes('LEGACY_SITEMAP_PATHS') || !worker.includes('/sitemap.xml')) {
-  fail('workers/site.js must 301 legacy sitemap paths to canonical /sitemap.xml')
+if (!worker.includes('LEGACY_SITEMAP_PATHS') || !worker.includes('isSeoCrawlerFile')) {
+  fail('workers/site.js must 301 legacy sitemap paths and serve sitemap on www + apex')
 }
 
 if (failures.length) {

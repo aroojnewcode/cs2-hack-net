@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Single sitemap at /sitemap.xml — every indexed page URL + image entries.
  * One urlset only (never a sitemap index). 404 is excluded.
  */
@@ -512,6 +512,7 @@ function main() {
       'Disallow: /404.html',
       '',
       `Sitemap: ${siteUrl('/sitemap.xml')}`,
+      'Sitemap: https://www.cs2hack.net/sitemap.xml',
       '',
     ].join('\n'),
     'utf8',

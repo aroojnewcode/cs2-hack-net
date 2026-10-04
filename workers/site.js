@@ -20,9 +20,21 @@ const LEGACY_SITEMAP_PATHS = new Set([
   '/sitemap_index.xml',
 ])
 
-function redirectToCanonicalSitemap(pathname) {
+/** Sitemap + robots must return 200 on www and apex (GSC property host must match). */
+function isSeoCrawlerFile(pathname) {
+  return (
+    pathname === '/sitemap.xml' ||
+    pathname === '/robots.txt' ||
+    pathname === '/sitemap.css'
+  )
+}
+
+function redirectToCanonicalSitemap(url) {
+  const pathname = url.pathname
   if (pathname === '/sitemap.xml/' || LEGACY_SITEMAP_PATHS.has(pathname)) {
-    return Response.redirect(`${CANONICAL_ORIGIN}/sitemap.xml`, 301)
+    const target = new URL('/sitemap.xml', url.origin)
+    target.protocol = 'https:'
+    return Response.redirect(target.toString(), 301)
   }
   return null
 }
@@ -72,17 +84,24 @@ export default {
 
     if (url.protocol === 'http:') {
       url.protocol = 'https:'
-      const apex = toApexUrl(url)
-      return Response.redirect((apex || url).toString(), 301)
+      const legacySitemap =
+        url.pathname === '/sitemap.xml/' || LEGACY_SITEMAP_PATHS.has(url.pathname)
+      if (!isSeoCrawlerFile(url.pathname) && !legacySitemap) {
+        const apex = toApexUrl(url)
+        return Response.redirect((apex || url).toString(), 301)
+      }
+      return Response.redirect(url.toString(), 301)
     }
 
-    const apex = toApexUrl(url)
-    if (apex) {
-      return Response.redirect(apex.toString(), 301)
-    }
-
-    const sitemapRedirect = redirectToCanonicalSitemap(url.pathname)
+    const sitemapRedirect = redirectToCanonicalSitemap(url)
     if (sitemapRedirect) return sitemapRedirect
+
+    if (!isSeoCrawlerFile(url.pathname)) {
+      const apex = toApexUrl(url)
+      if (apex) {
+        return Response.redirect(apex.toString(), 301)
+      }
+    }
 
     const assetResponse = await assetsFetch(env, request, url.pathname + url.search)
     const response = withHtmlCharset(assetResponse)
@@ -91,6 +110,9 @@ export default {
     const headers = new Headers(response.headers)
     if (!headers.has('Strict-Transport-Security')) {
       headers.set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload')
+    }
+    if (url.pathname === '/sitemap.xml') {
+      headers.set('content-type', 'application/xml; charset=utf-8')
     }
     const contentType = headers.get('content-type') || ''
     if (contentType.includes('text/html')) {

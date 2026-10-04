@@ -33,3 +33,4 @@ Disallow: /404
 Disallow: /404.html
 
 Sitemap: https://cs2hack.net/sitemap.xml
+Sitemap: https://www.cs2hack.net/sitemap.xml
