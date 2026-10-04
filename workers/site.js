@@ -6,6 +6,27 @@
  * Canonical host is apex (no www). Always 301 www → apex so crawlers never
  * see duplicate content or mismatched canonical/hreflang on www.
  */
+const CANONICAL_ORIGIN = 'https://cs2hack.net'
+
+/** Legacy split sitemap URLs → single canonical sitemap (one hop for Googlebot). */
+const LEGACY_SITEMAP_PATHS = new Set([
+  '/sitemap-pages.xml',
+  '/sitemap-products.xml',
+  '/sitemap-forums.xml',
+  '/sitemap-images.xml',
+  '/sitemap-blogs.xml',
+  '/sitemap-regions.xml',
+  '/sitemap-index.xml',
+  '/sitemap_index.xml',
+])
+
+function redirectToCanonicalSitemap(pathname) {
+  if (pathname === '/sitemap.xml/' || LEGACY_SITEMAP_PATHS.has(pathname)) {
+    return Response.redirect(`${CANONICAL_ORIGIN}/sitemap.xml`, 301)
+  }
+  return null
+}
+
 function assetsFetch(env, request, pathname) {
   return env.ASSETS.fetch(new Request(new URL(pathname, 'https://assets.local'), request))
 }
@@ -59,6 +80,9 @@ export default {
     if (apex) {
       return Response.redirect(apex.toString(), 301)
     }
+
+    const sitemapRedirect = redirectToCanonicalSitemap(url.pathname)
+    if (sitemapRedirect) return sitemapRedirect
 
     const assetResponse = await assetsFetch(env, request, url.pathname + url.search)
     const response = withHtmlCharset(assetResponse)

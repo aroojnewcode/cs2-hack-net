@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, readdirSync } from 'node:fs'
+﻿import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { join, relative } from 'node:path'
 
 const root = join(import.meta.dirname, '..')
@@ -364,8 +364,11 @@ if (!headers.includes('Content-Type: text/html; charset=utf-8')) {
 if (!headers.includes('/sitemap.xml')) {
   fail('_headers missing /sitemap.xml Content-Type')
 }
-if (!headers.includes('text/xml; charset=utf-8')) {
-  fail('_headers missing XML charset Content-Type')
+if (!headers.includes('application/xml; charset=utf-8')) {
+  fail('_headers missing application/xml Content-Type for /sitemap.xml')
+}
+if (!worker.includes('LEGACY_SITEMAP_PATHS') || !worker.includes('/sitemap.xml')) {
+  fail('workers/site.js must 301 legacy sitemap paths to canonical /sitemap.xml')
 }
 
 if (failures.length) {
