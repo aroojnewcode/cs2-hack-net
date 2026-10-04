@@ -336,7 +336,7 @@ function videosForPath(path) {
         thumb: VIDEO_THUMB,
         title: 'CS2 Hack Aimbot and ESP Preview',
         description:
-          'Self-hosted CS2 hack preview showing Aimbot, ESP menu and survival gameplay visuals on PC.',
+          'Self-hosted CS2 hack preview showing Aimbot, ESP menu and match gameplay on PC.',
         content: PREVIEW_VIDEO,
       },
     ]
@@ -396,6 +396,18 @@ function buildSitemap(games, forums, allPaths) {
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 ${entries.join('\n')}
 </urlset>
+`
+}
+
+/** GSC-friendly index (200 on /sitemap-index.xml — not a redirect). */
+function buildSitemapIndex() {
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>${escapeXml(siteUrl('/sitemap.xml'))}</loc>
+    <lastmod>${TODAY}</lastmod>
+  </sitemap>
+</sitemapindex>
 `
 }
 
@@ -513,10 +525,13 @@ function main() {
       '',
       `Sitemap: ${siteUrl('/sitemap.xml')}`,
       'Sitemap: https://www.cs2hack.net/sitemap.xml',
+      `Sitemap: ${siteUrl('/sitemap-index.xml')}`,
       '',
     ].join('\n'),
     'utf8',
   )
+
+  writeFileSync(join(publicDir, 'sitemap-index.xml'), buildSitemapIndex(), 'utf8')
 
   for (const name of [
     'sitemap-pages.xml',
@@ -525,7 +540,6 @@ function main() {
     'sitemap-images.xml',
     'sitemap-blogs.xml',
     'sitemap-regions.xml',
-    'sitemap-index.xml',
     'sitemap_index.xml',
   ]) {
     for (const dir of [publicDir, join(root, 'dist')]) {

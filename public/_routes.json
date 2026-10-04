@@ -3,6 +3,7 @@
   "include": ["/*"],
   "exclude": [
     "/sitemap.xml",
+    "/sitemap-index.xml",
     "/sitemap.css",
     "/robots.txt",
     "/favicon.svg",

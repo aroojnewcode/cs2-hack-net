@@ -264,13 +264,18 @@ for (const stale of [
   'sitemap-images.xml',
   'sitemap-blogs.xml',
   'sitemap-regions.xml',
-  'sitemap-index.xml',
   'sitemap_index.xml',
 ]) {
   if (existsSync(join(dist, stale))) fail(`Stale split sitemap still published: ${stale}`)
 }
 
 if (!existsSync(join(dist, 'sitemap.xml'))) fail('dist/sitemap.xml is missing')
+if (!existsSync(join(dist, 'sitemap-index.xml'))) fail('dist/sitemap-index.xml is missing')
+const sitemapIndex = readFileSync(join(dist, 'sitemap-index.xml'), 'utf8')
+if (!sitemapIndex.includes('<sitemapindex')) fail('sitemap-index.xml must be a sitemap index')
+if (!sitemapIndex.includes('https://cs2hack.net/sitemap.xml')) {
+  fail('sitemap-index.xml must reference https://cs2hack.net/sitemap.xml')
+}
 if (!existsSync(join(dist, 'robots.txt'))) fail('dist/robots.txt is missing')
 if (!existsSync(join(dist, '_routes.json'))) fail('dist/_routes.json is missing')
 
@@ -280,6 +285,9 @@ if (!robots.includes('Sitemap: https://cs2hack.net/sitemap.xml')) {
 }
 if (!robots.includes('Sitemap: https://www.cs2hack.net/sitemap.xml')) {
   fail('robots.txt must list www sitemap for URL-prefix GSC properties')
+}
+if (!robots.includes('Sitemap: https://cs2hack.net/sitemap-index.xml')) {
+  fail('robots.txt must list sitemap index for GSC')
 }
 if (!robots.includes('Allow: /sitemap.xml')) {
   fail('robots.txt must explicitly allow /sitemap.xml')
@@ -322,8 +330,8 @@ const redirects = readFileSync(join(root, 'public', '_redirects'), 'utf8')
 if (!redirects.includes('/sitemap-pages.xml')) {
   fail('_redirects missing legacy sitemap -> /sitemap.xml redirects')
 }
-if (!redirects.includes('/sitemap-index.xml')) {
-  fail('_redirects missing sitemap-index.xml -> /sitemap.xml redirect')
+if (redirects.includes('/sitemap-index.xml     /sitemap.xml')) {
+  fail('_redirects must not 301 /sitemap-index.xml (serve sitemap index file with 200)')
 }
 if (!redirects.includes('/tarkov-cheats')) {
   fail('_redirects must map the legacy /tarkov-cheats route to /cs2-hack')

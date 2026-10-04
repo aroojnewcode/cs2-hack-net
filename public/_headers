@@ -55,6 +55,12 @@
   X-Content-Type-Options: nosniff
   Access-Control-Allow-Origin: *
 
+/sitemap-index.xml
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=3600
+  X-Content-Type-Options: nosniff
+  Access-Control-Allow-Origin: *
+
 /sitemap.css
   Content-Type: text/css; charset=utf-8
   Cache-Control: public, max-age=3600

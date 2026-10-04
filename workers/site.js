@@ -16,7 +16,6 @@ const LEGACY_SITEMAP_PATHS = new Set([
   '/sitemap-images.xml',
   '/sitemap-blogs.xml',
   '/sitemap-regions.xml',
-  '/sitemap-index.xml',
   '/sitemap_index.xml',
 ])
 
@@ -24,6 +23,7 @@ const LEGACY_SITEMAP_PATHS = new Set([
 function isSeoCrawlerFile(pathname) {
   return (
     pathname === '/sitemap.xml' ||
+    pathname === '/sitemap-index.xml' ||
     pathname === '/robots.txt' ||
     pathname === '/sitemap.css'
   )
@@ -111,7 +111,7 @@ export default {
     if (!headers.has('Strict-Transport-Security')) {
       headers.set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload')
     }
-    if (url.pathname === '/sitemap.xml') {
+    if (url.pathname === '/sitemap.xml' || url.pathname === '/sitemap-index.xml') {
       headers.set('content-type', 'application/xml; charset=utf-8')
     }
     const contentType = headers.get('content-type') || ''

@@ -22,7 +22,7 @@ directory = "./dist"
 binding = "ASSETS"
 not_found_handling = "404-page"
 html_handling = "drop-trailing-slash"
-# SEO files (sitemap, robots) run through the Worker so www → apex and legacy sitemap aliases work.
+# SEO files (sitemap, robots, sitemap-index) run through the Worker for www + apex parity.
 run_worker_first = [
   "/*",
   "!/favicon.svg",
