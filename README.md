@@ -1,8 +1,6 @@
-# DayZ Cheats (dayzcheats.io)
+# CS2 Hack (cs2hack.net)
 
-Static Astro site for DayZ Standalone cheats — silent aim Aimbot, ESP, wallhack, loot ESP, radar hack — Cloudflare Workers ready.
-
-Worldwide English SEO targeting **dayz cheats**, **dayz hacks**, and **undetected dayz cheats**.
+Static Astro site for Counter-Strike 2 — Aimbot, ESP, wallhack, radar — deployed with Cloudflare Workers.
 
 ```bash
 npm install
