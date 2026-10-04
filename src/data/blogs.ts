@@ -1,4 +1,4 @@
-export type BlogSection = {
+﻿export type BlogSection = {
   heading: string
   body: string[]
 }
@@ -99,9 +99,9 @@ export const BLOGS: BlogPost[] = [
         heading: 'Silent aim, FOV and distance',
         body: [
           'Silent aim is the CS2 hack players search for: fire near a player and the round still lands while your crosshair never snaps.',
-          'FOV is the assist cone. Small FOV reads as tracking; huge FOV reads as a magnet in Elektro apartments.',
+          'FOV is the assist cone. Small FOV reads as tracking; huge FOV reads as a magnet in close angles like Mirage apartments or Inferno banana.',
           'Smoothing is stealth. Higher = slower human corrections. Lower = snappier and riskier.',
-          'Cap aim distance so airfield long shots do not look impossible.',
+          'Cap aim distance so long AWP holds on Overpass or Ancient do not look impossible.',
         ],
       },
       {
@@ -114,7 +114,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'Save match and PvP configs',
         body: [
-          'For quiet gearing, keep Aimbot mild or off and lean on player ESP, bomb and utility ESP and radar. For contested bombsite, add slight assist without snap behaviour.',
+          'On eco or save rounds, keep Aimbot mild or off and lean on player ESP, bomb and utility ESP and radar. On full-buy site takes, add slight assist without snap behaviour.',
           'Save a “match play” and a “PvP” config. Licenses for CS2 hack start from $35 on cs2hack.net.',
         ],
       },
@@ -367,7 +367,7 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'Why stream-proof exists',
         body: [
-          'ESP and loot overlays on stream are an instant report magnet. Private CS2 admins watch clips closely. Stream-proof keeps supported overlays out of common capture paths while you still see them locally.',
+          'ESP overlays on stream are an instant report magnet. Private CS2 admins watch clips closely. Stream-proof keeps supported overlays out of common capture paths while you still see them locally.',
         ],
       },
       {
@@ -463,33 +463,33 @@ export const BLOGS: BlogPost[] = [
     slug: 'match-play-guide',
     title: 'Safer CS2 hack Settings for Match Plays',
     excerpt:
-      'Safer CS2 hack defaults for survival and match plays — ESP-first play, mild silent aim, radar awareness and report-conscious habits.',
+      'Safer CS2 hack defaults for competitive matchmaking — ESP-first play, mild silent aim, radar awareness and report-conscious habits.',
     metaTitle: 'Safer CS2 hack Settings | Match Play Defaults',
     metaDescription:
-      'Safer CS2 hack settings for match plays and survival: ESP-first play, mild silent aim, utility highlighting, radar hack and VAC habits that reduce report risk on private servers.',
-    searchTerms: 'cs2 cheat settings match play survival safer defaults esp aimbot cs2 hack',
+      'Safer CS2 hack settings for matchmaking and Faceit-style servers: ESP-first play, mild silent aim, utility highlighting, radar hack and VAC habits that reduce report risk.',
+    searchTerms: 'cs2 cheat settings match play competitive safer defaults esp aimbot cs2 hack',
     date: '2026-09-17',
     readMinutes: 9,
-    tag: 'Survival',
+    tag: 'Match play',
     sections: [
       {
         heading: 'CS2 is a report environment',
         body: [
-          'VAC is not the only risk. Private admins spectate reports, and a player who lost a two-week kit will write that report. Conservative visuals beat loud Aimbot.',
+          'VAC is not the only risk. Overwatch and server admins review reports, and a player who lost a full-buy round will file one fast. Conservative visuals beat loud Aimbot.',
         ],
       },
       {
-        heading: 'Recommended survival stack',
+        heading: 'Recommended competitive stack',
         body: [
           'Player ESP, utility ESP, bomb and utility ESP and radar on; Aimbot off or heavily smoothed; short ESP range; stream-proof on if you clip.',
-          'Save this as a match config. A geared PvP config can be slightly more aggressive, but silent aim should still look natural.',
+          'Save this as a match config. A full-buy retake config can be slightly more aggressive, but silent aim should still look natural.',
         ],
       },
       {
         heading: 'Map habits that pay',
         body: [
-          'Coast towns (Elektro, Cherno): short-range ESP and utility tracking while you gear. Military zones and NW airfield: radar first, bomb and utility ESP second, mild silent aim only if you must fight.',
-          'Base raids on private servers: confirm stash and tent markers before you open a wall.',
+          'Default and pistol rounds: short-range ESP and utility tracking while you save or force. Full-buy mid and site fights: radar first, bomb and utility ESP second, mild silent aim only if you must swing.',
+          'Retakes and lurk timings: confirm bomb plant and rotate info from radar before you commit through a smoke.',
           'If VAC flips to Updating mid-session, stop. Waiting is cheaper than forcing a rebuild window.',
         ],
       },

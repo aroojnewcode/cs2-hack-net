@@ -17,7 +17,7 @@ import { CheckoutLink } from '../components/CheckoutLink'
 import { NotFoundPage } from './NotFoundPage'
 import { blogPath } from '../data/blogs'
 import { CS2_HOME_VIDEO } from '../data/media'
-import { DayZPreview } from '../components/DayZPreview'
+import { Cs2ProductPreview } from '../components/Cs2ProductPreview'
 
 function ProductPurchaseCard({ game }: { game: Game }) {
   return (
@@ -177,7 +177,7 @@ export function GameProductPage({ guideSlug }: GameProductPageProps) {
                     Feature preview
                   </h2>
                   <p className="mt-2 text-sm text-white/45">{CS2_HOME_VIDEO.caption}</p>
-                  <DayZPreview className="mt-4" />
+                  <Cs2ProductPreview className="mt-4" />
                 </div>
               </div>
 

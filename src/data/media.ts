@@ -96,7 +96,3 @@ const FORUM_MEDIA: Record<string, SeoMediaItem> = {
 export function getForumMedia(slug: string): SeoMediaItem {
   return FORUM_MEDIA[slug] || PAGE_MEDIA.forums
 }
-
-/** Legacy names still imported by preview components. */
-export const DAYZ_HERO = CS2_HERO
-export const DAYZ_HOME_VIDEO = CS2_HOME_VIDEO

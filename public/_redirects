@@ -89,7 +89,7 @@
 /forums/survival      /forums/match-play-guide   301
 /forums/loot-run      /forums/match-play-guide   301
 
-# Legacy Tarkov slugs → DayZ product (rebrand)
+# Legacy Tarkov slugs → CS2 product
 /tarkov-cheats   /cs2-hack   301
 /tarkov-cheats/  /cs2-hack   301
 /eft-cheats      /cs2-hack   301
@@ -114,7 +114,7 @@
 /buy-eft-cheats     /   301
 /buy-eft-cheats/    /   301
 
-# Legacy Warzone slugs → DayZ product (older rebrand)
+# Legacy Warzone slugs → CS2 product
 /warzone-cheats  /cs2-hack   301
 /warzone-cheats/ /cs2-hack   301
 /warzone-hacks   /cs2-hack   301

@@ -1,4 +1,4 @@
-import { DAYZ_HERO } from '../data/media'
+import { CS2_HERO } from '../data/media'
 
 type VideoBgProps = {
   /** Poster and fallback still. Shown immediately, and to crawlers. */
@@ -10,7 +10,7 @@ type VideoBgProps = {
 
 /** Full-bleed hero. A still paints first; an optional short loop plays over it. */
 export function VideoBg({
-  image = DAYZ_HERO,
+  image = CS2_HERO,
   imageAlt = 'Counter-Strike 2 wallhack showing enemy player models, names, weapons and cash through a stone archway',
   video,
 }: VideoBgProps) {

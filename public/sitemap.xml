@@ -5,7 +5,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://cs2hack.net/</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cs2hack.net/" />
@@ -38,7 +38,7 @@
   </url>
   <url>
     <loc>https://cs2hack.net/cs2-hack</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cs2hack.net/cs2-hack" />
@@ -84,7 +84,7 @@
   </url>
   <url>
     <loc>https://cs2hack.net/forums</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cs2hack.net/forums" />
@@ -236,12 +236,12 @@
     <image:image>
       <image:loc>https://cs2hack.net/og/forums-match-play-guide.jpg</image:loc>
       <image:title>Safer CS2 hack Settings for Match Plays Open Graph</image:title>
-      <image:caption>Safer CS2 hack settings for match plays and survival: ESP-first play, mild silent aim, utility highlighting, radar hack and VAC habits that reduce report risk on private servers.</image:caption>
+      <image:caption>Safer CS2 hack settings for matchmaking and Faceit-style servers: ESP-first play, mild silent aim, utility highlighting, radar hack and VAC habits that reduce report risk.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://cs2hack.net/media/cs2-esp-health.jpg</image:loc>
       <image:title>Safer CS2 hack Settings for Match Plays Artwork</image:title>
-      <image:caption>Safer CS2 hack defaults for survival and match plays - ESP-first play, mild silent aim, radar awareness and report-conscious habits.</image:caption>
+      <image:caption>Safer CS2 hack defaults for competitive matchmaking - ESP-first play, mild silent aim, radar awareness and report-conscious habits.</image:caption>
     </image:image>
   </url>
   <url>
@@ -336,7 +336,7 @@
   </url>
   <url>
     <loc>https://cs2hack.net/reviews</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cs2hack.net/reviews" />
@@ -349,7 +349,7 @@
   </url>
   <url>
     <loc>https://cs2hack.net/faq</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cs2hack.net/faq" />
@@ -362,7 +362,7 @@
   </url>
   <url>
     <loc>https://cs2hack.net/support</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cs2hack.net/support" />
@@ -375,7 +375,7 @@
   </url>
   <url>
     <loc>https://cs2hack.net/privacy</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cs2hack.net/privacy" />
@@ -388,7 +388,7 @@
   </url>
   <url>
     <loc>https://cs2hack.net/refunds</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.45</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cs2hack.net/refunds" />
@@ -401,7 +401,7 @@
   </url>
   <url>
     <loc>https://cs2hack.net/terms</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cs2hack.net/terms" />

@@ -92,6 +92,3 @@ export function getCheckoutUrl(_productSlug?: string): string {
 }
 
 export const CHECKOUT_REL = 'nofollow noopener noreferrer'
-
-/** Legacy name still imported by the footer. */
-export const OFFICIAL_DAYZ_LINKS = OFFICIAL_CS2_LINKS

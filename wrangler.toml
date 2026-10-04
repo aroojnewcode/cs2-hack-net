@@ -10,11 +10,11 @@ compatibility_date = "2026-09-12"
 command = "npm run build"
 
 [[routes]]
-pattern = "dayzcheats.io"
+pattern = "cs2hack.net"
 custom_domain = true
 
 [[routes]]
-pattern = "www.dayzcheats.io"
+pattern = "www.cs2hack.net"
 custom_domain = true
 
 [assets]
