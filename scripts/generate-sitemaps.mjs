@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Single sitemap at /sitemap.xml — every indexed page URL + image entries.
  * One urlset only (never a sitemap index). 404 is excluded.
  */
@@ -10,21 +10,21 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const publicDir = join(root, 'public')
 const dataDir = join(root, 'src', 'data')
 const pagesDir = join(root, 'src', 'pages')
-const SITE = (process.env.SITE_URL || 'https://dayzcheats.io').replace(/\/$/, '')
+const SITE = (process.env.SITE_URL || 'https://cs2hack.net').replace(/\/$/, '')
 const TODAY = new Date().toLocaleDateString('en-CA')
 const HREFLANG = ['en', 'x-default']
 
-const HERO_FULL = '/media/dayz-hero-full.webp'
-const COVER = '/media/dayz-cover.webp'
-const BOX = '/media/dayz-box.jpg'
-const ESP = '/media/dayz-esp-gameplay.gif'
-const MENU = '/media/dayz-menu.gif'
-const CONTROL = '/media/dayz-control-art.jpg'
-const HOME_ART = '/media/dayz-home-art.jpg'
-const TACTICAL_ART = '/media/dayz-tactical-art.jpg'
-const VIDEO_THUMB = '/media/dayz-video-thumb.jpg'
-const PREVIEW_VIDEO = '/videos/dayz-preview.mp4'
-const OG_DEFAULT = '/og/dayz-cheats.jpg'
+const HERO_FULL = '/media/cs2-wallhack-players.png'
+const COVER = '/media/cs2-radar-skeleton.png'
+const BOX = '/media/cs2-esp-health.jpg'
+const ESP = '/media/cs2-esp-street.png'
+const MENU = '/media/cs2-esp-street.png'
+const CONTROL = '/media/cs2-esp-street.png'
+const HOME_ART = '/media/cs2-wallhack-players.png'
+const TACTICAL_ART = '/media/cs2-radar-skeleton.png'
+const VIDEO_THUMB = '/media/cs2-product-poster.jpg'
+const PREVIEW_VIDEO = '/videos/cs2-product-loop.mp4'
+const OG_DEFAULT = '/og/cs2-hack.jpg'
 
 const ALL_SITE_IMAGES = [
   HERO_FULL,
@@ -37,7 +37,7 @@ const ALL_SITE_IMAGES = [
   TACTICAL_ART,
   VIDEO_THUMB,
   '/og/home.jpg',
-  '/og/dayz-cheats.jpg',
+  '/og/cs2-hack.jpg',
   '/og/forums.jpg',
   '/og/reviews.jpg',
   '/og/faq.jpg',
@@ -57,15 +57,15 @@ const FORUM_IMAGES = {
   'esp-wallhack-guide': ESP,
   'radar-hack-guide': MENU,
   'stream-proof-setup': HOME_ART,
-  'battleye-status': COVER,
+  'vac-status': COVER,
   'windows-setup': HERO_FULL,
-  'raid-play-guide': BOX,
+  'match-play-guide': BOX,
   'loader-errors': TACTICAL_ART,
 }
 
 const PAGE_META = {
   '/': { priority: '1.0', changefreq: 'daily' },
-  '/dayz-cheats': { priority: '0.9', changefreq: 'weekly' },
+  '/cs2-hack': { priority: '0.9', changefreq: 'weekly' },
   '/forums': { priority: '0.85', changefreq: 'weekly' },
   '/reviews': { priority: '0.8', changefreq: 'weekly' },
   '/faq': { priority: '0.75', changefreq: 'monthly' },
@@ -173,43 +173,43 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/home.jpg',
-        title: 'DayZ Cheats Open Graph',
-        caption: 'Google and social preview image for dayzcheats.io homepage.',
+        title: 'CS2 Hack Open Graph',
+        caption: 'Google and social preview image for cs2hack.net homepage.',
       },
       {
         src: HERO_FULL,
-        title: 'DayZ Cheats Hero',
-        caption: 'Buy DayZ cheats - DayZ Aimbot, ESP and radar hack hero artwork for PC.',
+        title: 'CS2 Hack Hero',
+        caption: 'Buy CS2 hack - CS2 Aimbot, ESP and radar hack hero artwork for PC.',
       },
       {
         src: COVER,
-        title: 'DayZ Cheats Product Cover',
-        caption: 'DayZ cheats product cover for checkout and social previews.',
+        title: 'CS2 Hack Product Cover',
+        caption: 'CS2 hack product cover for checkout and social previews.',
       },
       {
         src: VIDEO_THUMB,
-        title: 'DayZ Cheats Preview Thumbnail',
-        caption: 'Thumbnail for the DayZ Aimbot and ESP preview video.',
+        title: 'CS2 Hack Preview Thumbnail',
+        caption: 'Thumbnail for the CS2 Aimbot and ESP preview video.',
       },
       {
         src: OG_DEFAULT,
-        title: 'DayZ Cheats Product Social Preview',
-        caption: 'Default Open Graph image for dayzcheats.io product pages.',
+        title: 'CS2 Hack Product Social Preview',
+        caption: 'Default Open Graph image for cs2hack.net product pages.',
       },
     ]
   }
 
-  const game = games.find((g) => path === `/${g.slug}-cheats`)
+  const game = games.find((g) => path === `/${g.slug}-hack`)
   if (game) {
     return [
       {
-        src: '/og/dayz-cheats.jpg',
-        title: 'DayZ Cheats Open Graph',
-        caption: 'Google and social preview for the DayZ cheats product page.',
+        src: '/og/cs2-hack.jpg',
+        title: 'CS2 Hack Open Graph',
+        caption: 'Google and social preview for the CS2 hack product page.',
       },
       {
         src: COVER,
-        title: 'DayZ Aimbot ESP Product Artwork',
+        title: 'CS2 Aimbot ESP Product Artwork',
         caption: 'Product features, compatibility, status and price before checkout.',
       },
       {
@@ -229,8 +229,8 @@ function imagesForPath(path, games, forums) {
       },
       {
         src: VIDEO_THUMB,
-        title: 'DayZ Cheats Preview Thumbnail',
-        caption: 'Thumbnail for the DayZ cheats preview video.',
+        title: 'CS2 Hack Preview Thumbnail',
+        caption: 'Thumbnail for the CS2 hack preview video.',
       },
     ]
   }
@@ -239,13 +239,13 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/forums.jpg',
-        title: 'DayZ Cheats Forums Open Graph',
-        caption: 'Google preview image for the DayZ Cheats guides index.',
+        title: 'CS2 Hack Forums Open Graph',
+        caption: 'Google preview image for the CS2 Hack guides index.',
       },
       {
         src: MENU,
-        title: 'DayZ Cheats Forum Artwork',
-        caption: 'Artwork reference for DayZ setup and feature guides.',
+        title: 'CS2 Hack Forum Artwork',
+        caption: 'Artwork reference for CS2 setup and feature guides.',
       },
     ]
   }
@@ -259,14 +259,14 @@ function imagesForPath(path, games, forums) {
         title: `${forum?.title || slug} Open Graph`,
         caption:
           forum?.metaDescription ||
-          `Google preview image for ${forum?.title || slug} on dayzcheats.io.`,
+          `Google preview image for ${forum?.title || slug} on cs2hack.net.`,
       },
       {
         src: FORUM_IMAGES[slug] || MENU,
         title: `${forum?.title || slug} Artwork`,
         caption:
           forum?.excerpt ||
-          `Visible DayZ Cheats guide artwork for ${forum?.title || slug}.`,
+          `Visible CS2 Hack guide artwork for ${forum?.title || slug}.`,
       },
     ]
   }
@@ -275,8 +275,8 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/reviews.jpg',
-        title: 'DayZ Cheats Reviews Open Graph',
-        caption: 'Google preview image for DayZ cheats reviews.',
+        title: 'CS2 Hack Reviews Open Graph',
+        caption: 'Google preview image for CS2 hack reviews.',
       },
     ]
   }
@@ -284,8 +284,8 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/faq.jpg',
-        title: 'DayZ Cheats FAQ Open Graph',
-        caption: 'Google preview image for the DayZ Cheats FAQ.',
+        title: 'CS2 Hack FAQ Open Graph',
+        caption: 'Google preview image for the CS2 Hack FAQ.',
       },
     ]
   }
@@ -293,8 +293,8 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/support.jpg',
-        title: 'DayZ Cheats Support Open Graph',
-        caption: 'Google preview image for DayZ Cheats support.',
+        title: 'CS2 Hack Support Open Graph',
+        caption: 'Google preview image for CS2 Hack support.',
       },
     ]
   }
@@ -302,8 +302,8 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/privacy.jpg',
-        title: 'DayZ Cheats Privacy Policy',
-        caption: 'Privacy policy preview for dayzcheats.io orders and support.',
+        title: 'CS2 Hack Privacy Policy',
+        caption: 'Privacy policy preview for cs2hack.net orders and support.',
       },
     ]
   }
@@ -311,8 +311,8 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/terms.jpg',
-        title: 'DayZ Cheats Terms of Use',
-        caption: 'License terms preview for DayZ Cheats.',
+        title: 'CS2 Hack Terms of Use',
+        caption: 'License terms preview for CS2 Hack.',
       },
     ]
   }
@@ -320,23 +320,23 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/refunds.jpg',
-        title: 'DayZ Cheats Refund Policy',
-        caption: 'Refund rules preview for digital DayZ Cheats licenses.',
+        title: 'CS2 Hack Refund Policy',
+        caption: 'Refund rules preview for digital CS2 Hack licenses.',
       },
     ]
   }
 
-  return [{ src: OG_DEFAULT, title: 'DayZ Cheats', caption: 'DayZ Cheats page artwork.' }]
+  return [{ src: OG_DEFAULT, title: 'CS2 Hack', caption: 'CS2 Hack page artwork.' }]
 }
 
 function videosForPath(path) {
-  if (path === '/dayz-cheats') {
+  if (path === '/cs2-hack') {
     return [
       {
         thumb: VIDEO_THUMB,
-        title: 'DayZ Cheats Aimbot and ESP Preview',
+        title: 'CS2 Hack Aimbot and ESP Preview',
         description:
-          'Self-hosted DayZ cheats preview showing Aimbot, ESP menu and survival gameplay visuals on PC.',
+          'Self-hosted CS2 hack preview showing Aimbot, ESP menu and survival gameplay visuals on PC.',
         content: PREVIEW_VIDEO,
       },
     ]
@@ -347,7 +347,7 @@ function videosForPath(path) {
 function collectAllPaths(games, forums, staticRoutes) {
   const paths = new Set([
     ...staticRoutes,
-    ...games.map((game) => `/${game.slug}-cheats`),
+    ...games.map((game) => `/${game.slug}-hack`),
     ...forums.map((forum) => `/forums/${forum.slug}`),
   ])
   // Never index error page
@@ -361,7 +361,7 @@ function buildSitemap(games, forums, allPaths) {
   const sorted = [...allPaths].sort((a, b) => {
     const rank = (path) => {
       if (path === '/') return 0
-      if (path.endsWith('-cheats')) return 1
+      if (path.endsWith('-hack')) return 1
       if (path === '/forums') return 2
       if (path.startsWith('/forums/')) return 3
       if (path === '/reviews') return 4
@@ -405,7 +405,7 @@ function validate(games, forums, allPaths, sitemap) {
     errors.push('Retired forum slug remains indexed')
   }
   for (const game of games) {
-    const page = join(pagesDir, `${game.slug}-cheats.astro`)
+    const page = join(pagesDir, `${game.slug}-hack.astro`)
     if (!existsSync(page)) errors.push(`Product route has no page file: /${game.slug}-cheats`)
   }
   if (forums.length && !existsSync(join(pagesDir, 'forums', '[slug].astro'))) {
@@ -445,16 +445,16 @@ function validate(games, forums, allPaths, sitemap) {
     if (!imageLocs.includes(siteUrl(image))) errors.push(`Sitemap missing required image: ${image}`)
   }
   if (!sitemap.includes(siteUrl(PREVIEW_VIDEO))) {
-    errors.push('Sitemap missing DayZ preview video content_loc')
+    errors.push('Sitemap missing CS2 preview video content_loc')
   }
   if (/Tarkov|tarkovcheats|EFT Reaper|Warzone|warzonecheats|Ricochet/i.test(sitemap)) {
     errors.push('Sitemap still contains legacy Tarkov/Warzone labels')
   }
-  if (!sitemap.includes('dayzcheats.io')) {
-    errors.push('Sitemap must target dayzcheats.io')
+  if (!sitemap.includes('cs2hack.net')) {
+    errors.push('Sitemap must target cs2hack.net')
   }
   if (/tarkovcheats|warzonecheats|wardogshacks|theisle/i.test(sitemap)) {
-    errors.push('Sitemap contains a non-DayZ domain')
+    errors.push('Sitemap contains a non-CS2 domain')
   }
   if (imageLocs.length < expectedUrls.size) {
     errors.push('Image count is lower than page count - every URL needs an image')

@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { LogoMark } from './LogoMark'
 import { CheckoutLink } from './CheckoutLink'
-import { SITE_NAME } from '../data/site'
+import { PRODUCT_PATH, SITE_NAME } from '../data/site'
 
 /** Lean nav — Reviews stay in footer. */
 const NAV_LINKS = [
   { label: 'Forums', to: '/forums' },
-  { label: 'Product', to: '/dayz-cheats' },
+  { label: 'Product', to: PRODUCT_PATH },
   { label: 'Reviews', to: '/reviews' },
   { label: 'FAQ', to: '/faq' },
   { label: 'Support', to: '/support' },

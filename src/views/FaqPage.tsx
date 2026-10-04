@@ -19,10 +19,10 @@ export function FaqPage() {
               {SITE_NAME}
             </p>
             <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-              DayZ Cheats FAQ
+              CS2 Hack FAQ
             </h1>
             <p className="mt-4 text-base leading-relaxed text-white/60">
-              BattlEye status, ESP, Aimbot, radar hack, servers, buying, loading, support and
+              VAC status, ESP, Aimbot, radar hack, servers, buying, loading, support and
               refunds — straight answers before you checkout.
             </p>
           </div>
@@ -50,7 +50,7 @@ export function FaqPage() {
                       aria-hidden
                     />
                   </summary>
-                  <p className="pb-5 pr-8 text-sm leading-relaxed text-white/55">{item.a}</p>
+                  <p className="pb-5 pr-8 text-sm leading-relaxed text-white">{item.a}</p>
                 </details>
               ))}
             </div>
@@ -64,7 +64,7 @@ export function FaqPage() {
                 Still need help?
               </h2>
               <p className="mt-2 max-w-md text-sm text-white/50">
-                Open support for load help, or buy when BattlEye status is clear.
+                Open support for load help, or buy when VAC status is clear.
               </p>
             </div>
             <div className="flex shrink-0 flex-wrap items-center gap-3">
@@ -75,7 +75,7 @@ export function FaqPage() {
                 Support
               </a>
               <CheckoutLink className="cta-gradient inline-flex h-11 items-center justify-center rounded-full px-6 text-sm font-semibold text-white">
-                Buy DayZ Cheats
+                Buy CS2 Hack
               </CheckoutLink>
             </div>
           </div>

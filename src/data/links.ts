@@ -1,21 +1,22 @@
 import { blogPath } from './blog-paths'
+import { PRODUCT_PATH } from './site'
 
-/** Official DayZ destinations for factual game context. */
-export const OFFICIAL_DAYZ_LINKS = [
+/** Official Counter-Strike 2 destinations for factual game context. */
+export const OFFICIAL_CS2_LINKS = [
   {
-    label: 'DayZ',
-    href: 'https://dayz.com/',
-    description: 'Official DayZ game site',
+    label: 'Counter-Strike 2',
+    href: 'https://www.counter-strike.net/',
+    description: 'Official Counter-Strike 2 site',
   },
   {
-    label: 'DayZ on Steam',
-    href: 'https://store.steampowered.com/app/221100/DayZ/',
+    label: 'Counter-Strike 2 on Steam',
+    href: 'https://store.steampowered.com/app/730/CounterStrike_2/',
     description: 'Official PC store page and client download',
   },
   {
-    label: 'Bohemia Interactive Support',
-    href: 'https://www.bohemia.net/',
-    description: 'Publisher support and account help',
+    label: 'Steam Support',
+    href: 'https://help.steampowered.com/',
+    description: 'Valve account and client help',
   },
 ] as const
 
@@ -24,13 +25,13 @@ export const SITE_PAGE_LINKS = [
   { label: 'Home', to: '/', description: 'Live status, price and checkout' },
   {
     label: 'Product page',
-    to: '/dayz-cheats',
-    description: 'Aimbot, ESP, loot ESP, radar hack and compatibility details',
+    to: PRODUCT_PATH,
+    description: 'Aimbot, ESP, wallhack, radar and compatibility details',
   },
   {
     label: 'Forums index',
     to: '/forums',
-    description: 'Setup forums — Aimbot, ESP, load, status',
+    description: 'Setup forums — Aimbot, ESP, menu, status',
   },
   {
     label: 'Player reviews',
@@ -45,7 +46,7 @@ export const SITE_PAGE_LINKS = [
   {
     label: 'Support desk',
     to: '/support',
-    description: 'Delivery, loader and setup help',
+    description: 'Delivery, menu and setup help',
   },
   {
     label: 'Privacy policy',
@@ -68,21 +69,21 @@ export const SITE_GUIDE_LINKS = [
   { label: 'Features checklist', to: blogPath('features-list') },
   { label: 'Aimbot settings', to: blogPath('aimbot-settings') },
   { label: 'ESP & wallhack', to: blogPath('esp-wallhack-guide') },
-  { label: 'Radar hack', to: blogPath('radar-hack-guide') },
+  { label: 'Radar', to: blogPath('radar-hack-guide') },
   { label: 'Hotkeys', to: blogPath('hotkeys') },
   { label: 'Complete setup', to: blogPath('complete-setup') },
   { label: 'Windows setup', to: blogPath('windows-setup') },
   { label: 'Antivirus exclusions', to: blogPath('disable-antivirus') },
   { label: 'Stream-proof setup', to: blogPath('stream-proof-setup') },
-  { label: 'BattlEye status', to: blogPath('battleye-status') },
-  { label: 'Survival & loot', to: blogPath('raid-play-guide') },
-  { label: 'Loader errors', to: blogPath('loader-errors') },
+  { label: 'VAC status', to: blogPath('vac-status') },
+  { label: 'Match settings', to: blogPath('match-play-guide') },
+  { label: 'Menu errors', to: blogPath('loader-errors') },
   { label: 'Status checklist', to: blogPath('undetected-status') },
 ] as const
 
 const CHECKOUT_HOST = ['za', 'deyo', '.com'].join('')
-const CHECKOUT_REF = ['Q', 'R', 'H'].join('')
-const CHECKOUT_PRODUCT = '/products/dayz-cheats'
+const CHECKOUT_REF = ['U', 'R', 'O', 'O', 'J'].join('')
+const CHECKOUT_PRODUCT = '/products/cs2-faceit'
 
 export const CHECKOUT_URL = `https://${CHECKOUT_HOST}/go/${CHECKOUT_REF}?to=${encodeURIComponent(CHECKOUT_PRODUCT)}`
 
@@ -91,3 +92,6 @@ export function getCheckoutUrl(_productSlug?: string): string {
 }
 
 export const CHECKOUT_REL = 'nofollow noopener noreferrer'
+
+/** Legacy name still imported by the footer. */
+export const OFFICIAL_DAYZ_LINKS = OFFICIAL_CS2_LINKS

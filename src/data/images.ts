@@ -1,11 +1,11 @@
-import { DAYZ_HERO, DAYZ_SOLDIER, DAYZ_COVER, DAYZ_MENU, DAYZ_ESP } from './media'
-import { DAYZ_OG, getOgImageForPath, PAGE_OG } from './og'
+import { CS2_HERO, CS2_SOLDIER, CS2_COVER, CS2_MENU, CS2_ESP } from './media'
+import { CS2_OG, getOgImageForPath, PAGE_OG } from './og'
 
-export { DAYZ_OG, getOgImageForPath, PAGE_OG }
+export { CS2_OG, getOgImageForPath, PAGE_OG }
 export { forumOgImage } from './og'
 
-export const DAYZ_PRODUCT_HERO = DAYZ_HERO
-export const DAYZ_PRODUCT_COVER = DAYZ_COVER
+export const CS2_PRODUCT_HERO = CS2_HERO
+export const CS2_PRODUCT_COVER = CS2_COVER
 
 export type ImageSeoFields = {
   alt: string
@@ -21,13 +21,13 @@ export const IMAGE_SEO: Record<
     heroCaption: string
   }
 > = {
-  dayz: {
-    alt: 'DayZ cheats product artwork for DayZ Standalone on PC',
-    title: 'DayZ Cheats Product Details',
-    caption: 'DayZ Aimbot, ESP, wallhack, loot ESP, radar hack and BattlEye compatibility',
-    heroAlt: 'DayZ cheats silent aim Aimbot and ESP features',
-    heroTitle: 'DayZ Cheats Features',
-    heroCaption: 'Review DayZ Aimbot, ESP, radar hack and current BattlEye status',
+  cs2: {
+    alt: 'Counter-Strike 2 radar hack and skeleton ESP showing players through a stone wall',
+    title: 'CS2 radar and skeleton ESP',
+    caption: 'Radar overlay and skeleton ESP on the product page.',
+    heroAlt: 'Counter-Strike 2 radar hack and skeleton ESP showing players through a stone wall',
+    heroTitle: 'CS2 radar and skeleton ESP',
+    heroCaption: 'Radar overlay and skeleton ESP showing players through a wall.',
   },
 }
 
@@ -39,55 +39,55 @@ export const PAGE_IMAGES: Record<
   PageImage
 > = {
   home: {
-    src: DAYZ_SOLDIER,
+    src: CS2_SOLDIER,
     og: PAGE_OG.home,
-    alt: 'DayZ cheats Aimbot and ESP artwork for DayZ Standalone on PC',
-    title: 'DayZ Cheats',
-    caption: 'DayZ Aimbot, ESP, wallhack and radar hack overview.',
+    alt: 'Counter-Strike 2 wallhack showing enemy player models, names, weapons and cash through a stone archway',
+    title: 'CS2 wallhack player models',
+    caption: 'Wallhack gameplay with player names, weapons and cash visible through the archway.',
   },
   forums: {
-    src: DAYZ_HERO,
+    src: CS2_HERO,
     og: PAGE_OG.forums,
-    alt: 'DayZ cheats product artwork',
-    title: 'DayZ Cheats Guides',
-    caption: 'Setup, Aimbot and ESP guides for DayZ.',
+    alt: 'Counter-Strike 2 ESP on a Mirage street with player names, weapons and health in the distance',
+    title: 'CS2 ESP on Mirage',
+    caption: 'Street ESP gameplay with player names and weapons marked down the road.',
   },
   reviews: {
-    src: DAYZ_ESP,
+    src: CS2_ESP,
     og: PAGE_OG.reviews,
-    alt: 'DayZ cheats review artwork',
-    title: 'DayZ Cheats Reviews',
-    caption: 'Feature and compatibility feedback for DayZ Standalone.',
+    alt: 'Counter-Strike 2 player ESP with health bars, names and weapon icons through a courtyard arch',
+    title: 'CS2 ESP health bars',
+    caption: 'Player ESP with health, names and weapon icons in a courtyard.',
   },
   faq: {
-    src: DAYZ_MENU,
+    src: CS2_MENU,
     og: PAGE_OG.faq,
-    alt: 'DayZ cheats FAQ artwork',
-    title: 'DayZ Cheats FAQ',
-    caption: 'Compatibility, feature and setup answers for DayZ.',
+    alt: 'Counter-Strike 2 ESP on a Mirage street with player names, weapons and health in the distance',
+    title: 'CS2 ESP on Mirage',
+    caption: 'Street ESP gameplay with player names and weapons marked down the road.',
   },
   support: {
-    src: DAYZ_HERO,
+    src: CS2_HERO,
     og: PAGE_OG.support,
-    alt: 'DayZ cheats support artwork',
-    title: 'DayZ Cheats Support',
-    caption: 'Delivery, loader and setup support for DayZ cheats.',
+    alt: 'Counter-Strike 2 ESP on a Mirage street with player names, weapons and health in the distance',
+    title: 'CS2 ESP on Mirage',
+    caption: 'Street ESP gameplay with player names and weapons marked down the road.',
   },
   product: {
-    src: DAYZ_COVER,
+    src: CS2_COVER,
     og: PAGE_OG.product,
-    alt: 'DayZ Aimbot ESP and radar hack product artwork',
-    title: 'DayZ Cheats Features',
-    caption: 'Product details for DayZ Aimbot and ESP.',
+    alt: 'Counter-Strike 2 radar hack and skeleton ESP showing players through a stone wall',
+    title: 'CS2 radar and skeleton ESP',
+    caption: 'Radar overlay and skeleton ESP showing players through a wall.',
   },
 }
 
 export function getGameImage(_slug: string): string {
-  return DAYZ_PRODUCT_COVER
+  return CS2_PRODUCT_COVER
 }
 
 export function getProductHeroImage(_slug: string): string {
-  return DAYZ_PRODUCT_COVER
+  return CS2_PRODUCT_COVER
 }
 
 export function getOgImage(path?: string): string {

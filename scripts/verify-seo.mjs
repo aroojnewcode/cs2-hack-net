@@ -1,9 +1,9 @@
-﻿import { existsSync, readFileSync, readdirSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { join, relative } from 'node:path'
 
 const root = join(import.meta.dirname, '..')
 const dist = join(root, 'dist')
-const site = 'https://dayzcheats.io'
+const site = 'https://cs2hack.net'
 const failures = []
 
 function fail(message) {
@@ -66,25 +66,25 @@ for (const file of files) {
   if (html.includes('assets-prd.ignimgs.com')) fail(`${page}: contains third-party IGN image`)
   if (html.includes('cdn.cosmocheats.com')) fail(`${page}: contains third-party media hotlink`)
   if (html.includes('SearchAction')) fail(`${page}: contains invalid SearchAction`)
-  if (html.includes('"keywords"')) fail(`${page}: contains keyword-list structured data`)
+  if (/"keywords"\s*:/.test(html)) fail(`${page}: contains keyword-list structured data`)
   if (/forums\/(instructions|how-to-load)/.test(html)) {
     fail(`${page}: links to a retired forum route`)
   }
 }
 
 const home = readFileSync(join(dist, 'index.html'), 'utf8')
-const product = readFileSync(join(dist, 'dayz-cheats', 'index.html'), 'utf8')
+const product = readFileSync(join(dist, 'cs2-hack', 'index.html'), 'utf8')
 const reviews = readFileSync(join(dist, 'reviews', 'index.html'), 'utf8')
 const faq = readFileSync(join(dist, 'faq', 'index.html'), 'utf8')
 const support = readFileSync(join(dist, 'support', 'index.html'), 'utf8')
 const forums = readFileSync(join(dist, 'forums', 'index.html'), 'utf8')
 
 if (
-  !home.includes('<title>DayZ Cheats | DayZ Cheat Aimbot, ESP &amp; Hacks</title>')
+  !home.includes('<title>CS2 Hack | Counter-Strike 2 Aimbot, ESP &amp; Wallhack</title>')
 ) {
   fail('Homepage does not own the exact transactional title')
 }
-if (product.includes('<title>Buy DayZ Cheats')) fail('Product details page competes with homepage')
+if (product.includes('<title>Buy CS2 Hack')) fail('Product details page competes with homepage')
 if ((faq.match(/"@type":"FAQPage"/g) || []).length !== 1) fail('/faq must own one FAQPage')
 for (const [name, html] of [
   ['home', home],
@@ -99,7 +99,7 @@ for (const [name, html] of [
   ['product', product],
   ['reviews', reviews],
 ]) {
-  if (!html.includes('"@id":"https://dayzcheats.io/#product"')) {
+  if (!html.includes('"@id":"https://cs2hack.net/#product"')) {
     fail(`${name}: missing shared Product ID`)
   }
 }
@@ -137,8 +137,8 @@ for (const file of files) {
   const twImage = html.match(/<meta name="twitter:image" content="([^"]+)"/)?.[1]
   const robotsMeta = html.match(/<meta name="robots" content="([^"]+)"/)?.[1]
 
-  if (!ogImage?.startsWith('https://dayzcheats.io/og/') || !ogImage.endsWith('.jpg')) {
-    fail(`${page}: og:image must be https://dayzcheats.io/og/*.jpg for SERP thumbnails`)
+  if (!ogImage?.startsWith('https://cs2hack.net/og/') || !ogImage.endsWith('.jpg')) {
+    fail(`${page}: og:image must be https://cs2hack.net/og/*.jpg for SERP thumbnails`)
   }
   if (!twImage || twImage !== ogImage) {
     fail(`${page}: twitter:image must match og:image`)
@@ -163,8 +163,8 @@ for (const [name, html] of [
   ['product', product],
   ['forums', forums],
 ]) {
-  if (!html.includes('/media/dayz-')) {
-    fail(`${name}: missing visible DayZ media in page body`)
+  if (!html.includes('/media/cs2-')) {
+    fail(`${name}: missing visible CS2 media in page body`)
   }
 }
 for (const [name, html, og] of [
@@ -176,8 +176,8 @@ for (const [name, html, og] of [
     fail(`${name}: missing Open Graph image ${og}`)
   }
 }
-if (!product.includes('/videos/dayz-preview.mp4') || !product.includes('/media/dayz-video-thumb.jpg')) {
-  fail('Product page is missing the self-hosted DayZ preview video')
+if (!product.includes('/videos/cs2-product-loop.mp4') || !product.includes('/media/cs2-product-poster.jpg')) {
+  fail('Product page is missing the self-hosted CS2 preview video')
 }
 if (home.includes('iframe.mediadelivery.net') || product.includes('iframe.mediadelivery.net')) {
   fail('Pages still embed blocked mediadelivery video (403 off-domain)')
@@ -193,11 +193,11 @@ if (
 const sitemap = readFileSync(join(dist, 'sitemap.xml'), 'utf8')
 if (sitemap.includes('<sitemapindex')) fail('sitemap.xml must be a single urlset, not an index')
 if (/forums\/(instructions|how-to-load)/.test(sitemap)) fail('Retired forum remains in sitemap.xml')
-if (!sitemap.includes('https://dayzcheats.io/')) {
-  fail('sitemap.xml must use https://dayzcheats.io URLs')
+if (!sitemap.includes('https://cs2hack.net/')) {
+  fail('sitemap.xml must use https://cs2hack.net URLs')
 }
-if (!sitemap.includes('/videos/dayz-preview.mp4')) {
-  fail('sitemap.xml missing DayZ preview video entry')
+if (!sitemap.includes('/videos/cs2-product-loop.mp4')) {
+  fail('sitemap.xml missing CS2 preview video entry')
 }
 if (!sitemap.includes('xmlns:video=')) {
   fail('sitemap.xml missing video namespace for Google video indexing')
@@ -216,16 +216,15 @@ const uniqueSitemapUrls = new Set(pageLocs)
 const imageLocs = [...sitemap.matchAll(/<image:loc>([^<]+)<\/image:loc>/g)].map((match) => match[1])
 const requiredImages = [
   '/og/home.jpg',
-  '/og/dayz-cheats.jpg',
+  '/og/cs2-hack.jpg',
   '/og/forums.jpg',
   '/og/reviews.jpg',
   '/og/faq.jpg',
   '/og/support.jpg',
-  '/media/dayz-hero-full.webp',
-  '/media/dayz-cover.webp',
-  '/media/dayz-esp-gameplay.gif',
-  '/media/dayz-menu.gif',
-  '/media/dayz-video-thumb.jpg',
+  '/media/cs2-wallhack-players.png',
+  '/media/cs2-esp-street.png',
+  '/media/cs2-radar-skeleton.png',
+  '/media/cs2-product-poster.jpg',
 ]
 
 for (const url of expectedUrls) {
@@ -276,7 +275,7 @@ if (!existsSync(join(dist, 'robots.txt'))) fail('dist/robots.txt is missing')
 if (!existsSync(join(dist, '_routes.json'))) fail('dist/_routes.json is missing')
 
 const robots = readFileSync(join(dist, 'robots.txt'), 'utf8')
-if (!robots.includes('Sitemap: https://dayzcheats.io/sitemap.xml')) {
+if (!robots.includes('Sitemap: https://cs2hack.net/sitemap.xml')) {
   fail('robots.txt must point at the canonical HTTPS sitemap')
 }
 if (!robots.includes('Allow: /sitemap.xml')) {
@@ -296,18 +295,19 @@ if (!routes.exclude?.includes('/sitemap.xml') || !routes.exclude?.includes('/rob
 
 for (const asset of [
   'public/og/home.jpg',
-  'public/og/dayz-cheats.jpg',
+  'public/og/cs2-hack.jpg',
   'public/og/forums.jpg',
   'public/og/reviews.jpg',
   'public/og/faq.jpg',
   'public/og/support.jpg',
-  'public/media/dayz-hero-full.webp',
-  'public/media/dayz-cover.webp',
-  'public/media/dayz-box.jpg',
-  'public/media/dayz-esp-gameplay.gif',
-  'public/media/dayz-menu.gif',
-  'public/media/dayz-video-thumb.jpg',
-  'public/videos/dayz-preview.mp4',
+  'public/media/cs2-wallhack-players.png',
+  'public/media/cs2-esp-street.png',
+  'public/media/cs2-esp-health.jpg',
+  'public/media/cs2-product-poster.jpg',
+  'public/media/cs2-hero-poster.jpg',
+  'public/videos/cs2-hero-loop.mp4',
+  'public/videos/cs2-product-loop.mp4',
+  'public/apple-touch-icon.png',
   'public/sitemap.css',
   'public/_routes.json',
   'functions/_middleware.js',
@@ -323,10 +323,10 @@ if (!redirects.includes('/sitemap-index.xml')) {
   fail('_redirects missing sitemap-index.xml -> /sitemap.xml redirect')
 }
 if (!redirects.includes('/tarkov-cheats')) {
-  fail('_redirects must map the legacy /tarkov-cheats route to /dayz-cheats')
+  fail('_redirects must map the legacy /tarkov-cheats route to /cs2-hack')
 }
 if (!redirects.includes('/dayz-hacks')) {
-  fail('_redirects must map the /dayz-hacks keyword alias to /dayz-cheats')
+  fail('_redirects must map the /dayz-hacks keyword alias to /cs2-hack')
 }
 
 const worker = readFileSync(join(root, 'workers', 'site.js'), 'utf8')

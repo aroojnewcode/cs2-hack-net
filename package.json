@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "astro dev --port 5174",
+    "dev": "astro dev --port 5174 --host",
     "build": "node scripts/generate-seo-assets.mjs && node scripts/generate-sitemaps.mjs && astro build && node scripts/verify-seo.mjs",
     "preview": "astro preview --port 5175",
     "deploy": "wrangler deploy",

@@ -1,31 +1,43 @@
-﻿import { DAYZ_OG } from './images'
+import { CS2_OG } from './images'
 import { PAGE_OG } from './og'
 
-export const SITE_URL = 'https://dayzcheats.io'
-export const SITE_NAME = 'DayZ Cheats'
-export const SITE_HOST = 'dayzcheats.io'
+export const SITE_URL = 'https://cs2hack.net'
+export const SITE_NAME = 'CS2 Hack'
+export const SITE_HOST = 'cs2hack.net'
+export const PRODUCT_PATH = '/cs2-hack'
 
 /**
  * Sole purpose — used in schema + about copy.
- * Single-product site: DayZ / DayZ Standalone cheats for PC (worldwide).
- * Canonical host is apex https://dayzcheats.io (www 301s to apex in the Worker).
+ * Single-product site: Counter-Strike 2 hack for PC (worldwide).
+ * Canonical host is apex https://cs2hack.net (www 301s to apex in the Worker).
  */
 export const SITE_PURPOSE =
-  'Buy DayZ cheats for DayZ Standalone on Windows PC — silent-aim Aimbot, player and loot ESP, wallhack, radar hack and live BattlEye status with instant digital delivery.'
+  'Buy a Counter-Strike 2 hack for CS2 on Windows PC — silent-aim Aimbot, player ESP, wallhack, radar and live VAC status with instant digital delivery.'
 
 export const SITE_ABOUT = [
-  'dayz cheats',
-  'dayz cheat',
-  'dayz hacks',
-  'dayz hack',
-  'dayz standalone cheats',
-  'dayz aimbot',
-  'dayz esp',
-  'dayz wallhack',
-  'dayz radar hack',
-  'battleye dayz cheats',
-  'dayz cheat aimbot',
+  'cs2 hack',
+  'cs2 hacks',
+  'counter strike 2 hack',
+  'cs2 cheats',
+  'cs2 aimbot',
+  'cs2 esp',
+  'cs2 wallhack',
+  'cs2 radar',
+  'vac cs2 hack',
+  'counter-strike 2 aimbot',
 ] as const
+
+/** Meta keywords for search engines (cs2 hack, cs2 cheat, Counter-Strike 2 hacks). */
+export const SITE_META_KEYWORDS = [
+  ...new Set([
+    ...SITE_ABOUT,
+    'counter strike 2 hacks',
+    'counter-strike 2 cheat',
+    'counter-strike 2 cheats',
+    'cs2 cheat menu',
+    'vac status cs2',
+  ]),
+].join(', ')
 
 /** Offer price shown on product schema + purchase UI. */
 export const PRODUCT_PRICE_USD = '35'
@@ -35,7 +47,7 @@ export const SEO_REGIONS = [
   { hreflang: 'x-default', label: 'Default' },
 ] as const
 
-export const OG_IMAGE = DAYZ_OG
+export const OG_IMAGE = CS2_OG
 
 export type PageSeo = {
   title: string
@@ -53,74 +65,74 @@ const INDEX_ROBOTS =
 
 export const SEO = {
   home: {
-    title: 'DayZ Cheats | DayZ Cheat Aimbot, ESP & Hacks',
+    title: 'CS2 Hack | Counter-Strike 2 Aimbot, ESP & Wallhack',
     description:
-      'Buy DayZ cheats for DayZ Standalone — silent aim Aimbot, player and loot ESP, wallhack and radar hack from $35. Check live BattlEye status, then checkout.',
+      'Counter-Strike 2 cheats for Windows 10/11 — CS2 hack with Aimbot, ESP, wallhack and radar from $35. Check live VAC status, then checkout.',
     path: '/',
     ogType: 'website',
     image: PAGE_OG.home,
-    imageAlt: 'DayZ Cheats — DayZ Aimbot, ESP and radar hack for PC',
+    imageAlt: 'CS2 Hack — Counter-Strike 2 Aimbot, ESP and radar for PC',
     robots: INDEX_ROBOTS,
   },
   forums: {
-    title: 'DayZ Cheats Guides | Aimbot, ESP, Radar & Status',
+    title: 'CS2 Hack Guides | Aimbot, ESP, Radar & VAC Status',
     description:
-      'DayZ cheats guides hub — silent aim, player and loot ESP, radar hack, antivirus exclusions, loader setup and BattlEye status articles before you buy.',
+      'CS2 hack guides — silent aim, player ESP, radar, antivirus exclusions, menu setup and VAC status articles before you buy.',
     path: '/forums',
     ogType: 'website',
     image: PAGE_OG.forums,
-    imageAlt: 'DayZ Cheats setup guides for Aimbot, ESP and BattlEye',
+    imageAlt: 'CS2 Hack setup guides for Aimbot, ESP and VAC status',
     robots: INDEX_ROBOTS,
   },
   reviews: {
-    title: 'DayZ Cheats Reviews | Buyer Feedback on DayZ Hacks',
+    title: 'CS2 Hack Reviews | Buyer Feedback on Counter-Strike 2',
     description:
-      'Read DayZ cheats reviews covering silent aim, player ESP, loot ESP and BattlEye rebuilds before you buy a DayZ Standalone license for PC.',
+      'Read CS2 hack reviews covering silent aim, player ESP and VAC rebuilds before you buy a Counter-Strike 2 license for PC.',
     path: '/reviews',
     ogType: 'website',
     image: PAGE_OG.reviews,
-    imageAlt: 'DayZ Cheats buyer reviews for DayZ Standalone',
+    imageAlt: 'CS2 Hack buyer reviews for Counter-Strike 2',
     robots: INDEX_ROBOTS,
   },
   faq: {
-    title: 'DayZ Cheats FAQ | Price, BattlEye Status & Setup',
+    title: 'CS2 Hack FAQ | Price, VAC Status & Setup',
     description:
-      'FAQ for buying DayZ cheats on Windows PC — price, Aimbot and ESP features, BattlEye status, private server support, loader setup and delivery.',
+      'FAQ for buying a CS2 hack on Windows PC — price, Aimbot and ESP features, VAC status, Premier and community servers, setup and delivery.',
     path: '/faq',
     ogType: 'website',
     image: PAGE_OG.faq,
-    imageAlt: 'DayZ Cheats FAQ — price, BattlEye and setup',
+    imageAlt: 'CS2 Hack FAQ — price, VAC status and setup',
     robots: INDEX_ROBOTS,
   },
   support: {
-    title: 'DayZ Cheats Support | Loader, Delivery & Setup Help',
+    title: 'CS2 Hack Support | Menu, Delivery & Setup Help',
     description:
-      'Get help buying and loading DayZ cheats — delivery email, Windows setup, antivirus exclusions, loader errors and BattlEye status updates.',
+      'Get help buying and opening the CS2 hack — delivery email, Windows setup, antivirus exclusions, menu errors and VAC status updates.',
     path: '/support',
     ogType: 'website',
     image: PAGE_OG.support,
-    imageAlt: 'DayZ Cheats support for loader and delivery help',
+    imageAlt: 'CS2 Hack support for menu and delivery help',
     robots: INDEX_ROBOTS,
   },
   product: {
-    title: 'DayZ Cheats Price & Checkout | Aimbot, ESP, Radar',
+    title: 'CS2 Hack Price & Checkout | Aimbot, ESP, Radar',
     description:
-      'DayZ cheats price and checkout — silent aim Aimbot, player ESP, loot ESP, wallhack, radar hack, spoofer and live BattlEye status from $35.',
-    path: '/dayz-cheats',
+      'CS2 hack price and checkout — silent aim Aimbot, player ESP, wallhack, radar and live VAC status from $35.',
+    path: PRODUCT_PATH,
     ogType: 'product',
     image: PAGE_OG.product,
-    imageAlt: 'DayZ Aimbot, ESP and radar hack product details',
+    imageAlt: 'Counter-Strike 2 Aimbot, ESP and radar product details',
     robots: INDEX_ROBOTS,
   },
 } as const satisfies Record<string, PageSeo>
 
 export const HOME_HEADINGS = {
-  h1: 'DayZ Cheats — DayZ Cheat Aimbot, ESP & Hacks',
-  h2Features: 'DayZ Aimbot, ESP, loot ESP & radar hack',
-  h2Featured: 'DayZ ESP and silent aim Aimbot',
-  h2About: 'Clear BattlEye status before you buy DayZ cheats',
-  h2Access: 'Buy DayZ Cheats',
-  h2Faq: 'DayZ Cheats FAQ',
+  h1: 'CS2 Hack — Counter-Strike 2 Aimbot, ESP & Wallhack',
+  h2Features: 'CS2 Aimbot, ESP, wallhack & radar',
+  h2Featured: 'CS2 ESP and silent aim Aimbot',
+  h2About: 'Check VAC status before you buy a CS2 hack',
+  h2Access: 'Buy CS2 Hack',
+  h2Faq: 'CS2 Hack FAQ',
 } as const
 
 export function absoluteUrl(path: string) {

@@ -18,7 +18,7 @@ export function HeroSearch({
   value,
   onChange,
   submitTo = 'forums',
-  placeholder = 'Search DayZ Cheats…',
+  placeholder = 'Search CS2 Hack…',
   autoFocus = false,
   className = '',
 }: HeroSearchProps) {
@@ -39,15 +39,17 @@ export function HeroSearch({
   }, [])
 
   const matches = useMemo(() => {
+    if (submitTo === 'filter') return []
     const term = q.trim().toLowerCase()
     if (!term) return []
     const cheatAliases = [
-      'dayz cheats',
-      'dayz cheat',
-      'dayz hacks',
-      'dayz hack',
-      'dayz standalone cheats',
-      'dayzhacks',
+      'cs2 hack',
+      'cs2 hacks',
+      'cs2 cheat',
+      'cs2 cheats',
+      'counter strike 2 hack',
+      'counter-strike 2 cheats',
+      'cs2hacks',
       'cheats',
     ]
     if (cheatAliases.some((a) => a.includes(term) || term.includes(a))) {
@@ -56,7 +58,7 @@ export function HeroSearch({
     return GAMES.filter(
       (g) => g.name.toLowerCase().includes(term) || g.slug.includes(term),
     ).slice(0, 8)
-  }, [q])
+  }, [q, submitTo])
 
   function setQuery(next: string) {
     if (value === undefined) setInternal(next)
@@ -73,6 +75,13 @@ export function HeroSearch({
   function submit(e?: SyntheticEvent) {
     e?.preventDefault()
     const term = q.trim()
+    if (submitTo === 'filter') {
+      setOpen(false)
+      const url = term ? `/forums?q=${encodeURIComponent(term)}` : '/forums'
+      window.history.replaceState(null, '', url)
+      document.getElementById('forum-results')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      return
+    }
     const exact = GAMES.find(
       (g) =>
         g.name.toLowerCase() === term.toLowerCase() ||

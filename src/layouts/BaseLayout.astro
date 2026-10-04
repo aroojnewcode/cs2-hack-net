@@ -2,6 +2,8 @@
 import '../styles/global.css'
 import {
   OG_IMAGE,
+  PRODUCT_PATH,
+  SITE_META_KEYWORDS,
   SITE_NAME,
   absoluteUrl,
   type PageSeo,
@@ -28,8 +30,8 @@ const imageType = isOgJpeg
     : image.endsWith('.gif')
       ? 'image/gif'
       : 'image/jpeg'
-const imageWidth = isOgJpeg ? 1200 : image.includes('/media/dayz-') ? 800 : 1200
-const imageHeight = isOgJpeg ? 630 : image.includes('/media/dayz-') ? 450 : 630
+const imageWidth = isOgJpeg ? 1200 : 1200
+const imageHeight = isOgJpeg ? 630 : 630
 const robots =
   seo.robots ||
   'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
@@ -38,7 +40,7 @@ const isHome = seo.path === '/' || seo.path === ''
 /** Preload OG only when it supports LCP (hero/product/forums) — not text pages */
 const preloadOg =
   isHome ||
-  seo.path === '/dayz-cheats' ||
+  seo.path === PRODUCT_PATH ||
   seo.path === '/forums' ||
   seo.path.startsWith('/forums/')
 ---
@@ -47,12 +49,15 @@ const preloadOg =
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content={SITE_NAME} />
     <meta name="color-scheme" content="dark" />
     <meta name="theme-color" content="#08060f" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
     {preloadOg ? (
       <link rel="preload" as="image" href={imageUrl} type={imageType} fetchpriority="high" />
@@ -61,14 +66,15 @@ const preloadOg =
       <link
         rel="preload"
         as="image"
-        href="/media/dayz-hero-full.webp"
-        type="image/webp"
+        href="/media/cs2-hero-poster.jpg"
+        type="image/jpeg"
         fetchpriority="high"
       />
     ) : null}
 
     <title>{seo.title}</title>
     <meta name="description" content={seo.description} />
+    <meta name="keywords" content={SITE_META_KEYWORDS} />
     <meta name="robots" content={robots} />
     <meta name="googlebot" content={robots} />
     <meta name="bingbot" content={robots} />

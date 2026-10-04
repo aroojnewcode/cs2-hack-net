@@ -1,7 +1,6 @@
-﻿# Videos
+# Self-hosted video loops (cs2hack.net)
 
-Self-hosted DayZ / DayZ Cheats media:
-- `/videos/dayz-preview.mp4` — battlelog DayZ Reaper preview (no third-party embeds)
-- `/media/dayz-hero-full.webp`, `dayz-cover.webp`, `dayz-box.jpg` — product art
-- `/media/dayz-menu.gif`, `dayz-esp-gameplay.gif` — menu/ESP stills
-- `/media/dayz-video-thumb.jpg` — preview poster frame
+- `/videos/cs2-hero-loop.mp4` — homepage hero background (~6s, muted loop)
+- `/videos/cs2-product-loop.mp4` — feature preview on home and product page (lazy-loaded)
+
+Posters: `/media/cs2-hero-poster.jpg`, `/media/cs2-product-poster.jpg`
