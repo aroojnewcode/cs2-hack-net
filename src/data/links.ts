@@ -22,7 +22,7 @@ export const OFFICIAL_CS2_LINKS = [
 
 /** Primary internal routes for crawl equity. */
 export const SITE_PAGE_LINKS = [
-  { label: 'Home', to: '/', description: 'Live status, price and checkout' },
+  { label: 'Site homepage', to: '/', description: 'Live status, price and checkout' },
   {
     label: 'Product page',
     to: PRODUCT_PATH,

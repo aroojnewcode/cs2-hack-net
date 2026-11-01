@@ -35,11 +35,11 @@ export function ReviewsPage() {
               {SITE_NAME}
             </p>
             <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-              CS2 Hack Reviews
+              CS2 Hack Reviews — Buyer Feedback on Counter-Strike 2
             </h1>
             <p className="mt-4 text-base leading-relaxed text-white/60">
-              Feedback from players who bought CS2 Hack — ESP accuracy, status honesty, and
-              whether the build held after the last VAC patch.
+              Reviews from players who bought CS2 Hack — ESP accuracy, VAC status honesty, and
+              whether the build held after the last patch.
             </p>
             <p className="mt-4 text-sm text-white/45" aria-label="Aggregate rating">
               Average {aggregate.ratingValue} / 5 · {aggregate.reviewCount} reviews
@@ -75,7 +75,7 @@ export function ReviewsPage() {
           <div className="mx-auto flex max-w-3xl flex-col gap-5 sm:flex-row sm:items-end sm:justify-between sm:gap-8">
             <div className="min-w-0 flex-1">
               <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
-                Ready to buy CS2 Hack?
+                Reviews: Ready to buy CS2 Hack?
               </h2>
               <p className="mt-2 max-w-md text-sm text-white/50">
                 Confirm live VAC status on the product page, then checkout.

@@ -25,19 +25,19 @@ export type BlogPost = {
 export const BLOGS: BlogPost[] = [
   {
     slug: 'features-list',
-    title: 'CS2 hack Features Checklist',
+    title: 'CS2 hack Features Checklist — Aimbot, Radar',
     excerpt:
       'Checklist of every CS2 hack module on cs2hack.net — silent aim, player ESP, bomb and utility ESP, wallhack, radar hack and spoofer — before you open checkout from $35.',
-    metaTitle: 'CS2 hack Features Checklist | Aimbot ESP Radar',
+    metaTitle: 'Features – net — silent aim, player ESP, bomb and utility',
     metaDescription:
-      'CS2 hack features checklist: silent aim Aimbot, player ESP, bomb and utility ESP, wallhack, radar hack and spoofer on cs2hack.net from $35. Compare modules before you buy.',
+      'CS2 hack features checklist: silent aim Aimbot, player ESP, bomb and utility ESP, wallhack, radar hack and spoofer on cs2hack.net from $35.',
     searchTerms: 'cs2 cheat features checklist cs2 hack aimbot esp wallhack radar hack',
     date: '2026-09-17',
     readMinutes: 8,
     tag: 'Features',
     sections: [
       {
-        heading: 'Use this checklist before checkout',
+        heading: 'Features: Use this checklist before checkout',
         body: [
           'Searching “cs2 hack” or “cs2 cheat” usually means one question: what is actually included? This guide is the module checklist — not the price page. Open Product details for live VAC status and checkout from $35.',
           'CS2 Hack on cs2hack.net is a single Counter-Strike 2 product for Windows PC: one loader, one license, clear-to-load or Updating against VAC. Official and many modded private servers are supported when the build allows it.',
@@ -76,12 +76,12 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'aimbot-settings',
-    title: 'CS2 Aimbot Settings for Silent Aim',
+    title: 'CS2 Aimbot Settings for Silent Aim & Smoothing',
     excerpt:
       'Tune CS2 Aimbot FOV, smoothing, hitbox and silent aim so player tracking stays effective without looking robotic to spectating admins.',
-    metaTitle: 'CS2 Aimbot Settings | Silent Aim FOV & Smoothing',
+    metaTitle: 'Aimbot Settings – smoothing and visible-check so your CS2',
     metaDescription:
-      'CS2 Aimbot settings for PC: silent aim, FOV, smoothing and visible-check so your CS2 hack looks legit on official and private servers. Start conservative, then save configs.',
+      'CS2 Aimbot settings for PC: silent aim, FOV, smoothing and visible-check so your CS2 hack looks legit on official and private servers.',
     searchTerms: 'cs2 aimbot settings silent aim fov smoothing cs2 cheat cs2 hack',
     date: '2026-09-17',
     readMinutes: 10,
@@ -89,7 +89,7 @@ export const BLOGS: BlogPost[] = [
     howTo: true,
     sections: [
       {
-        heading: 'Start conservative',
+        heading: 'Aimbot Settings: Start conservative',
         body: [
           'Blatant Aimbot is the fastest report on a CS2 server — private admins spectate more often than VAC alone catches. Start with a tight FOV, heavy smoothing and chest or nearest-bone targeting before head-only snap.',
           'Confirm live VAC status first. Aimbot settings cannot save a detected build after a Valve or VAC update.',
@@ -122,10 +122,10 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'esp-wallhack-guide',
-    title: 'CS2 ESP and Wallhack Setup',
+    title: 'CS2 ESP and Wallhack Setup — Player Boxes & Utility',
     excerpt:
       'Configure CS2 ESP and wallhack for player boxes, utility tracking and utility highlighting without flooding your HUD.',
-    metaTitle: 'CS2 ESP Wallhack Setup | Player Boxes & Utility ESP',
+    metaTitle: 'CS2 ESP Wallhack Setup | Player Boxes & Utility',
     metaDescription:
       'CS2 ESP and wallhack setup: player boxes, skeletons, distance, health, bomb and utility ESP through smokes. Clean HUD defaults for CS2 hack on PC.',
     searchTerms: 'cs2 esp wallhack cs2 hack player boxes utility esp bomb esp cs2 cheat',
@@ -135,25 +135,25 @@ export const BLOGS: BlogPost[] = [
     howTo: true,
     sections: [
       {
-        heading: 'What CS2 ESP actually does',
+        heading: 'What esp wallhack overlays do',
         body: [
-          'CS2 ESP draws players, weapons and utility through walls and smokes before you wide-swing a choke. It does not pull the trigger.',
-          'Most searches for “cs2 wallhack” or “cs2 esp” want this awareness layer — in a round where one blind peek costs the site, information beats loud Aimbot.',
+          'A CS2 esp wallhack layer draws players, weapons and utility through walls and smokes before you wide-swing a choke. It does not pull the trigger.',
+          'Most buyers want this awareness layer — in a round where one blind peek costs the site, information beats loud Aimbot.',
         ],
       },
       {
-        heading: 'Player and utility ESP',
+        heading: 'Player boxes and utility highlighting',
         body: [
           'Enable boxes or skeletons, distance and health. Colour-code enemies clearly and keep teammates readable if the build supports it.',
-          'Bomb and utility ESP helps on retakes — know where utility landed and whether the bomb is down before you commit through a smoke.',
+          'Bomb and utility highlighting helps on retakes — know where utility landed and whether the bomb is down before you commit through a smoke.',
           'Limit max distance so the HUD is not flooded with far contacts you cannot fight this second.',
         ],
       },
       {
-        heading: 'ESP filters and bomb sites',
+        heading: 'Overlay filters and objective lanes',
         body: [
           'Filter overlays: names, weapons, health bars and cash only when you need them. Too many labels creates tunnel vision on A long or mid.',
-          'On community servers, pair player ESP with radar so you read rotates into bombsites without staring at the minimap.',
+          'On community servers, pair player boxes with radar so you read rotates into bombsites without staring at the minimap.',
         ],
       },
       {
@@ -166,7 +166,7 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'radar-hack-guide',
-    title: 'CS2 Radar Hack Overlay Guide',
+    title: 'CS2 Radar Hack Screen Overlay for Off-Screen Players',
     excerpt:
       'Use the CS2 radar hack 2D overlay to track off-screen players, avoid third parties and approach bombsite safer.',
     metaTitle: 'CS2 Radar Hack Guide | 2D Overlay for Off-Screen Players',
@@ -179,7 +179,7 @@ export const BLOGS: BlogPost[] = [
     howTo: true,
     sections: [
       {
-        heading: 'Why radar matters in CS2',
+        heading: 'Radar Hack: Why radar matters in CS2',
         body: [
           'Most CS2 deaths are information gaps — the AWPer holding an off-angle, the duo already stacked on site, the lurker flanking mid while you commit. A radar hack closes that gap without forcing Aimbot.',
           'Buyers searching “cs2 radar hack” want macro awareness for rotates between bombsites, mid and spawn.',
@@ -202,12 +202,12 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'hotkeys',
-    title: 'CS2 Hack Hotkeys After Load',
+    title: 'CS2 Hack Hotkeys — Menu, Aimbot Toggles After Load',
     excerpt:
       'Menu and toggle hotkeys for CS2 hack after a clean load — Aimbot, ESP, bomb and utility ESP, radar and panic binds.',
-    metaTitle: 'CS2 Hack Hotkeys | Menu ESP Aimbot Toggles',
+    metaTitle: 'Hotkeys – After a clean load Buy CS2 Hack on cs2hack',
     metaDescription:
-      'CS2 hack hotkeys after checkout: open menu, Aimbot toggle, player ESP, bomb and utility ESP, radar hack and stream-proof binds. Keep panic keys minimal for field use.',
+      'CS2 hack hotkeys after checkout: open menu, Aimbot toggle, player ESP, bomb and utility ESP, radar hack and stream-proof binds.',
     searchTerms: 'cs2 hack hotkeys menu esp aimbot radar toggles cs2 cheat',
     date: '2026-09-17',
     readMinutes: 8,
@@ -215,7 +215,7 @@ export const BLOGS: BlogPost[] = [
     howTo: true,
     sections: [
       {
-        heading: 'After a clean load',
+        heading: 'Hotkeys: After a clean load',
         body: [
           'Buy CS2 Hack on cs2hack.net (from $35), confirm live VAC status, launch CS2, run the loader, then open the menu with the key in your delivery notes.',
           'If the menu does not open, do not spam keys — contact support with your order ID.',
@@ -238,12 +238,12 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'complete-setup',
-    title: 'Complete CS2 Hack Setup',
+    title: 'Complete CS2 Hack Setup Guide — Loader Steps',
     excerpt:
       'Step-by-step CS2 hack setup: buy from $35, antivirus exclusions, load order, enable ESP and Aimbot, save configs, re-check VAC.',
-    metaTitle: 'CS2 Hack Setup Guide | Complete Loader Steps',
+    metaTitle: 'Setup – If status is Updating after a VAC patch, wait',
     metaDescription:
-      'Complete CS2 hack setup for Windows PC: buy when status is clear, antivirus exclusions, load order, first-run ESP and Aimbot config, then re-check VAC after every patch.',
+      'Complete CS2 hack setup for Windows PC: buy when status is clear, antivirus exclusions, load order, first-run ESP and Aimbot config, then re-check VAC.',
     searchTerms: 'cs2 hack setup load order windows complete guide cs2 cheat',
     date: '2026-09-17',
     readMinutes: 11,
@@ -282,10 +282,10 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'windows-setup',
-    title: 'CS2 Hack on Windows 10 and 11',
+    title: 'CS2 Hack on Windows 10 and 11 — Setup Guide',
     excerpt:
       'Windows 10/11 prep for CS2 hack — overlays, Defender exclusions, admin rights and a clean first launch against VAC.',
-    metaTitle: 'CS2 Hack Windows 10/11 Setup | PC Guide',
+    metaTitle: 'Windows – launch with correct permissions and run a clean',
     metaDescription:
       'Windows 10 and 11 setup for CS2 hack: close overlays, add Defender exclusions, launch with correct permissions and run a clean first load against VAC.',
     searchTerms: 'cs2 hack windows 11 setup defender overlay admin cs2 cheat',
@@ -295,7 +295,7 @@ export const BLOGS: BlogPost[] = [
     howTo: true,
     sections: [
       {
-        heading: 'Supported systems',
+        heading: 'Windows: Supported systems',
         body: [
           'CS2 Hack targets Counter-Strike 2 on Windows 10 and Windows 11 (Intel and AMD). Keep Windows stable enough that the Steam CS2 starts cleanly, then freeze major changes mid-session.',
         ],
@@ -317,12 +317,12 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'disable-antivirus',
-    title: 'Antivirus Exclusions for CS2 Hack',
+    title: 'Antivirus Exclusions for CS2 Hack — Defender',
     excerpt:
       'Allowlist CS2 hack in Windows Defender and common antivirus so the loader is not quarantined before first run.',
-    metaTitle: 'CS2 Hack Antivirus Exclusions | Defender',
+    metaTitle: 'Antivirus – then continue setup when status is clear',
     metaDescription:
-      'Allowlist CS2 hack loaders in Windows Defender and third-party antivirus before you load. Restore quarantines, exclude the delivery folder, then continue setup when status is clear.',
+      'Allowlist CS2 hack loaders in Windows Defender and third-party antivirus before you load. Restore quarantines, exclude the delivery folder, then continue.',
     searchTerms: 'cs2 hack antivirus defender exclusion quarantine loader cs2 cheat',
     date: '2026-09-17',
     readMinutes: 8,
@@ -330,7 +330,7 @@ export const BLOGS: BlogPost[] = [
     howTo: true,
     sections: [
       {
-        heading: 'Why loaders get flagged',
+        heading: 'Antivirus: Why loaders get flagged',
         body: [
           'Cheat loaders often trip generic heuristics even from a legitimate cs2hack.net purchase. Exclusion comes before you spam launch into CS2.',
         ],
@@ -352,12 +352,12 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'stream-proof-setup',
-    title: 'Stream-Proof CS2 Hack for OBS',
+    title: 'Stream-Proof CS2 Hack for OBS — Safe Overlay',
     excerpt:
       'Hide CS2 ESP, utility highlighting and Aimbot overlays from OBS and capture tools with stream-proof mode.',
-    metaTitle: 'Stream-Proof CS2 Hack | OBS Safe Overlay',
+    metaTitle: 'Stream Proof – wallhack and Aimbot overlays off recordings',
     metaDescription:
-      'Stream-proof CS2 hack for OBS and clips: keep ESP, wallhack and Aimbot overlays off recordings while you still see them locally. Test with a private capture first.',
+      'Stream-proof CS2 hack for OBS and clips: keep ESP, wallhack and Aimbot overlays off recordings while you still see them locally.',
     searchTerms: 'cs2 stream proof cheats esp obs hide overlay clips cs2 cheat',
     date: '2026-09-17',
     readMinutes: 8,
@@ -390,7 +390,7 @@ export const BLOGS: BlogPost[] = [
     title: 'CS2 VAC Status: Clear to Load vs Updating',
     excerpt:
       'What clear-to-load and Updating mean for CS2 hack after VAC and game patches — and why admin bans are a separate risk.',
-    metaTitle: 'CS2 VAC Status | Clear to Load vs Updating',
+    metaTitle: 'Status – and how admin bans differ from anti-cheat',
     metaDescription:
       'CS2 VAC status explained for CS2 hack: clear-to-load vs Updating after patches, why you wait, and how admin bans differ from anti-cheat detections.',
     searchTerms: 'cs2 vac status clear to load updating cs2 hack explained',
@@ -428,12 +428,12 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'undetected-status',
-    title: 'VAC Status Checklist Before You Buy or Load',
+    title: 'VAC Status Checklist Before You Buy CS2 Hack or Load',
     excerpt:
       'Short VAC status checklist for CS2 hack — confirm clear-to-load before checkout and before every post-patch session.',
-    metaTitle: 'VAC Status Checklist | Before You Buy CS2 Hack',
+    metaTitle: 'Checklist – confirm clear-to-load before checkout and before',
     metaDescription:
-      'VAC status checklist for CS2 hack: confirm clear-to-load before checkout and before every post-patch session. Wait when Updating; buy from $35 when status is live.',
+      'VAC status checklist for CS2 hack: confirm clear-to-load before checkout and before every post-patch session. Wait when Updating; buy from $35 when status.',
     searchTerms: 'cs2 hack status checklist before buy load vac undetected cs2 hack',
     date: '2026-09-17',
     readMinutes: 8,
@@ -461,19 +461,19 @@ export const BLOGS: BlogPost[] = [
   },
 {
     slug: 'match-play-guide',
-    title: 'Safer CS2 hack Settings for Match Plays',
+    title: 'Safer CS2 hack Settings for Match Plays Defaults',
     excerpt:
       'Safer CS2 hack defaults for competitive matchmaking — ESP-first play, mild silent aim, radar awareness and report-conscious habits.',
-    metaTitle: 'Safer CS2 hack Settings | Match Play Defaults',
+    metaTitle: 'Match Plays – Safer CS2 hack settings for matchmaking and',
     metaDescription:
-      'Safer CS2 hack settings for matchmaking and Faceit-style servers: ESP-first play, mild silent aim, utility highlighting, radar hack and VAC habits that reduce report risk.',
+      'Match Plays: Safer CS2 hack settings for matchmaking and Faceit-style servers: ESP-first play, mild silent aim, utility highlighting, radar hack and VAC.',
     searchTerms: 'cs2 cheat settings match play competitive safer defaults esp aimbot cs2 hack',
     date: '2026-09-17',
     readMinutes: 9,
     tag: 'Match play',
     sections: [
       {
-        heading: 'CS2 is a report environment',
+        heading: 'Match Plays: CS2 is a report environment',
         body: [
           'VAC is not the only risk. Overwatch and server admins review reports, and a player who lost a full-buy round will file one fast. Conservative visuals beat loud Aimbot.',
         ],
@@ -497,12 +497,12 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'loader-errors',
-    title: 'Fix CS2 Hack Loader Errors',
+    title: 'Fix CS2 Hack Loader Errors — Inject & Menu',
     excerpt:
       'Troubleshoot CS2 hack loader errors — menu not opening, instant close, antivirus quarantine and failed inject.',
-    metaTitle: 'Fix CS2 Hack Loader Errors | Inject & Menu',
+    metaTitle: 'Cs2 Hack Loader Errors – failed inject and menu not opening',
     metaDescription:
-      'Fix CS2 hack loader errors on Windows: antivirus quarantine, overlays, failed inject and menu not opening. Confirm VAC status is clear first, then escalate with your order ID.',
+      'Fix CS2 hack loader errors on Windows: antivirus quarantine, overlays, failed inject and menu not opening. Confirm VAC status is clear first, then.',
     searchTerms: 'cs2 hack loader error inject failed menu not opening fix',
     date: '2026-09-17',
     readMinutes: 8,
@@ -510,7 +510,7 @@ export const BLOGS: BlogPost[] = [
     howTo: true,
     sections: [
       {
-        heading: 'Stop and check status',
+        heading: 'Cs2 Hack Loader Errors: Stop and check status',
         body: [
           'First question: is the product clear to load against VAC? Updating builds fail for reasons no setting can fix.',
         ],

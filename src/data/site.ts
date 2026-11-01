@@ -65,23 +65,24 @@ const INDEX_ROBOTS =
 
 export const SEO = {
   home: {
-    title: 'CS2 Hack | Counter-Strike 2 Aimbot, ESP & Wallhack',
+    title: 'Esp Wallhack – Counter-Strike 2 cheats for Windows 10/11',
     description:
       'Counter-Strike 2 cheats for Windows 10/11 — CS2 hack with Aimbot, ESP, wallhack and radar from $35. Check live VAC status, then checkout.',
     path: '/',
     ogType: 'website',
     image: PAGE_OG.home,
-    imageAlt: 'CS2 Hack — Counter-Strike 2 Aimbot, ESP and radar for PC',
+    imageAlt: 'Esp Wallhack – Counter-Strike 2 Aimbot, ESP and radar for PC',
     robots: INDEX_ROBOTS,
   },
   forums: {
-    title: 'CS2 Hack Guides | Aimbot, ESP, Radar & VAC Status',
+    title: 'Vac Status – Buy CS2 Hack All forum threads 13 thread s',
     description:
-      'CS2 hack guides — silent aim, player ESP, radar, antivirus exclusions, menu setup and VAC status articles before you buy.',
+      'VAC status for CS2 hack — silent aim, player ESP, radar, antivirus exclusions, menu setup and status articles before you buy on cs2hack.net.',
     path: '/forums',
     ogType: 'website',
     image: PAGE_OG.forums,
-    imageAlt: 'CS2 Hack setup guides for Aimbot, ESP and VAC status',
+    imageAlt:
+      'Vac Status – Counter-Strike 2 ESP on a Mirage street with player names, weapons and health in the distance',
     robots: INDEX_ROBOTS,
   },
   reviews: {
@@ -95,7 +96,7 @@ export const SEO = {
     robots: INDEX_ROBOTS,
   },
   faq: {
-    title: 'CS2 Hack FAQ | Price, VAC Status & Setup',
+    title: 'Faq – CS2 Hack is a Counter-Strike 2 tool on cs2hack',
     description:
       'FAQ for buying a CS2 hack on Windows PC — price, Aimbot and ESP features, VAC status, Premier and community servers, setup and delivery.',
     path: '/faq',
@@ -105,9 +106,9 @@ export const SEO = {
     robots: INDEX_ROBOTS,
   },
   support: {
-    title: 'CS2 Hack Support | Menu, Delivery & Setup Help',
+    title: 'Support – Get help buying and opening the CS2 hack',
     description:
-      'Get help buying and opening the CS2 hack — delivery email, Windows setup, antivirus exclusions, menu errors and VAC status updates.',
+      'Support: Get help buying and opening the CS2 hack — delivery email, Windows setup, antivirus exclusions, menu errors and VAC status updates.',
     path: '/support',
     ogType: 'website',
     image: PAGE_OG.support,
@@ -115,13 +116,14 @@ export const SEO = {
     robots: INDEX_ROBOTS,
   },
   product: {
-    title: 'CS2 Hack Price & Checkout | Aimbot, ESP, Radar',
+    title: 'Cs2 Hacks – Undetected · Counter-Strike 2 · VAC · cs2hack',
     description:
-      'CS2 hack price and checkout — silent aim Aimbot, player ESP, wallhack, radar and live VAC status from $35.',
+      'CS2 hack price and checkout — silent aim Aimbot, player ESP, wallhack, radar and live VAC status from $35. Undetected · Counter-Strike 2 · VAC · cs2hack.',
     path: PRODUCT_PATH,
     ogType: 'product',
     image: PAGE_OG.product,
-    imageAlt: 'Counter-Strike 2 Aimbot, ESP and radar product details',
+    imageAlt:
+      'Cs2 Hacks – Counter-Strike 2 radar hack and skeleton ESP showing players through a stone wall',
     robots: INDEX_ROBOTS,
   },
 } as const satisfies Record<string, PageSeo>

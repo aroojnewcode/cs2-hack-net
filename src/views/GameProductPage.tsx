@@ -93,7 +93,7 @@ export function GameProductPage({ guideSlug }: GameProductPageProps) {
               aria-label="Breadcrumb"
             >
               <a href="/" className="shrink-0 hover:text-white/70">
-                Home
+                cs2hack homepage
               </a>
               <span className="shrink-0">/</span>
               <span className="min-w-0 text-white/70">Product details</span>
@@ -107,7 +107,7 @@ export function GameProductPage({ guideSlug }: GameProductPageProps) {
                 </span>
 
                 <h1 className="mt-3 text-2xl font-semibold leading-tight tracking-tight text-white sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
-                  CS2 Hack Price & Checkout
+                  CS2 Hack Price & Checkout — Aimbot, Radar
                 </h1>
                 <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/55 sm:mt-4 sm:text-base">
                   Silent aim Aimbot, player ESP, wallhack and radar for Counter-Strike 2 on PC.

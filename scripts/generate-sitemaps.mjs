@@ -73,6 +73,7 @@ const PAGE_META = {
   '/privacy': { priority: '0.4', changefreq: 'yearly' },
   '/terms': { priority: '0.4', changefreq: 'yearly' },
   '/refunds': { priority: '0.45', changefreq: 'yearly' },
+  '/sitemap.xml': { priority: '0.2', changefreq: 'daily' },
 }
 
 function escapeXml(value) {
@@ -326,6 +327,16 @@ function imagesForPath(path, games, forums) {
     ]
   }
 
+  if (path === '/sitemap.xml') {
+    return [
+      {
+        src: '/og/home.jpg',
+        title: 'cs2hack.net sitemap',
+        caption: 'XML sitemap listing indexable pages on cs2hack.net.',
+      },
+    ]
+  }
+
   return [{ src: OG_DEFAULT, title: 'CS2 Hack', caption: 'CS2 Hack page artwork.' }]
 }
 
@@ -352,6 +363,7 @@ function collectAllPaths(games, forums, staticRoutes) {
   ])
   // Never index error page
   paths.delete('/404')
+  paths.add('/sitemap.xml')
   return [...paths]
 }
 
@@ -524,7 +536,6 @@ function main() {
       'Disallow: /404.html',
       '',
       `Sitemap: ${siteUrl('/sitemap.xml')}`,
-      'Sitemap: https://www.cs2hack.net/sitemap.xml',
       `Sitemap: ${siteUrl('/sitemap-index.xml')}`,
       '',
     ].join('\n'),

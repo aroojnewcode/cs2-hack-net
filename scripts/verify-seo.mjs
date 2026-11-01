@@ -80,9 +80,9 @@ const support = readFileSync(join(dist, 'support', 'index.html'), 'utf8')
 const forums = readFileSync(join(dist, 'forums', 'index.html'), 'utf8')
 
 if (
-  !home.includes('<title>CS2 Hack | Counter-Strike 2 Aimbot, ESP &amp; Wallhack</title>')
+  !home.includes('<title>Esp Wallhack – Counter-Strike 2 cheats for Windows 10/11</title>')
 ) {
-  fail('Homepage does not own the exact transactional title')
+  fail('Homepage does not own the esp wallhack title')
 }
 if (product.includes('<title>Buy CS2 Hack')) fail('Product details page competes with homepage')
 if ((faq.match(/"@type":"FAQPage"/g) || []).length !== 1) fail('/faq must own one FAQPage')
@@ -210,6 +210,7 @@ const expectedUrls = new Set(
     .filter((file) => relative(dist, file).replaceAll('\\', '/') !== '404.html')
     .map(pageUrl),
 )
+const sitemapSelfUrl = `${site}/sitemap.xml`
 const urlBlocks = sitemap.match(/<url>[\s\S]*?<\/url>/g) || []
 const pageLocs = urlBlocks.map((block) => block.match(/<loc>([^<]+)<\/loc>/)?.[1]).filter(Boolean)
 const uniqueSitemapUrls = new Set(pageLocs)
@@ -230,12 +231,17 @@ const requiredImages = [
 for (const url of expectedUrls) {
   if (!uniqueSitemapUrls.has(url)) fail(`sitemap.xml missing built page ${url}`)
 }
+if (!uniqueSitemapUrls.has(sitemapSelfUrl)) {
+  fail('sitemap.xml must list its own canonical URL')
+}
 for (const url of uniqueSitemapUrls) {
-  if (!expectedUrls.has(url)) fail(`sitemap.xml contains URL without a built page: ${url}`)
+  if (!expectedUrls.has(url) && url !== sitemapSelfUrl) {
+    fail(`sitemap.xml contains URL without a built page: ${url}`)
+  }
 }
 if (uniqueSitemapUrls.size !== pageLocs.length) fail('sitemap.xml contains duplicate URLs')
-if (urlBlocks.length !== expectedUrls.size) {
-  fail(`sitemap.xml must contain exactly ${expectedUrls.size} built page URLs`)
+if (urlBlocks.length !== expectedUrls.size + 1) {
+  fail(`sitemap.xml must contain exactly ${expectedUrls.size + 1} URLs (pages plus sitemap.xml)`)
 }
 if ((sitemap.match(/<image:image>/g) || []).length < expectedUrls.size) {
   fail('Every sitemap URL must include at least one image entry')
@@ -283,8 +289,8 @@ const robots = readFileSync(join(dist, 'robots.txt'), 'utf8')
 if (!robots.includes('Sitemap: https://cs2hack.net/sitemap.xml')) {
   fail('robots.txt must point at the canonical HTTPS sitemap')
 }
-if (!robots.includes('Sitemap: https://www.cs2hack.net/sitemap.xml')) {
-  fail('robots.txt must list www sitemap for URL-prefix GSC properties')
+if (robots.includes('Sitemap: https://www.cs2hack.net/sitemap.xml')) {
+  fail('robots.txt must not list a separate www sitemap (www 301s to apex)')
 }
 if (!robots.includes('Sitemap: https://cs2hack.net/sitemap-index.xml')) {
   fail('robots.txt must list sitemap index for GSC')

@@ -1,8 +1,10 @@
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { Navbar } from '../components/Navbar'
 import { SiteFooter } from '../components/SiteFooter'
+import { SocialShare } from '../components/SocialShare'
 import { BLOGS, blogPath, getBlog } from '../data/blogs'
 import { guidePath } from '../data/games'
+import { getForumMedia } from '../data/media'
 import { CheckoutLink } from '../components/CheckoutLink'
 import { SITE_HOST } from '../data/site'
 import { NotFoundPage } from './NotFoundPage'
@@ -25,6 +27,7 @@ export function BlogPostPage({ slug }: BlogPostPageProps) {
   if (!post) return <NotFoundPage />
 
   const related = BLOGS.filter((b) => b.slug !== post.slug).slice(0, 6)
+  const media = getForumMedia(slug)
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-z-bg text-white">
@@ -40,11 +43,11 @@ export function BlogPostPage({ slug }: BlogPostPageProps) {
               aria-label="Breadcrumb"
             >
               <a href="/" className="hover:text-white/70">
-                Home
+                cs2hack homepage
               </a>
               <span>/</span>
               <a href="/forums" className="hover:text-white/70">
-                Forums
+                All setup threads
               </a>
               <span>/</span>
               <span className="text-white/70">{post.tag}</span>
@@ -59,6 +62,20 @@ export function BlogPostPage({ slug }: BlogPostPageProps) {
             <p className="mt-4 text-base leading-relaxed text-white/60 sm:text-lg">
               {post.excerpt}
             </p>
+
+            <figure className="mt-8 overflow-hidden rounded-2xl border border-white/10">
+              <img
+                src={media.image}
+                alt={`${post.title} — CS2 Hack guide illustration on ${SITE_HOST}`}
+                width={1200}
+                height={630}
+                loading="lazy"
+                decoding="async"
+                className="h-auto w-full object-cover"
+              />
+            </figure>
+
+            <SocialShare path={blogPath(post.slug)} title={post.metaTitle} />
 
             <div className="mt-10 space-y-10">
               {post.sections.map((section) => (
@@ -76,18 +93,16 @@ export function BlogPostPage({ slug }: BlogPostPageProps) {
             </div>
 
             <div className="page-card mt-12 rounded-2xl p-6 sm:p-8">
-              <h2 className="text-lg font-semibold text-white">
-                Ready for CS2 Hack?
-              </h2>
+              <h2 className="text-lg font-semibold text-white">Ready for CS2 Hack?</h2>
               <p className="mt-2 text-sm leading-relaxed text-white/55">
-                Check live VAC status, then buy ESP, wallhack, radar hack and silent aim for
-                Counter-Strike 2 on {SITE_HOST}. Need help? Read{' '}
+                Check live VAC status, then buy ESP, wallhack, radar hack and silent aim for Counter-Strike 2
+                on {SITE_HOST}. Need help? Read{' '}
                 <a href="/support" className="text-white/80 underline-offset-2 hover:underline">
-                  CS2 Hack support
-                </a>
-                {' '}or{' '}
+                  delivery and menu help desk
+                </a>{' '}
+                or{' '}
                 <a href="/reviews" className="text-white/80 underline-offset-2 hover:underline">
-                  player reviews
+                  read buyer ratings
                 </a>
                 . Own the game via{' '}
                 <a
@@ -96,7 +111,7 @@ export function BlogPostPage({ slug }: BlogPostPageProps) {
                   rel="noopener noreferrer"
                   className="text-white/80 underline-offset-2 hover:underline"
                 >
-                  Steam
+                  Steam Counter-Strike 2 store
                 </a>
                 .
               </p>
@@ -105,16 +120,16 @@ export function BlogPostPage({ slug }: BlogPostPageProps) {
                   href={guidePath('cs2')}
                   className="inline-flex items-center justify-center rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium text-white hover:bg-white/5"
                 >
-                  Buy CS2 Hack
+                  Open price & checkout
                 </a>
                 <a
                   href="/support"
                   className="inline-flex items-center justify-center rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium text-white hover:bg-white/5"
                 >
-                  Support
+                  Open a support ticket
                 </a>
                 <CheckoutLink className="cta-gradient inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium text-white">
-                  Buy CS2 Hack
+                  Checkout CS2 Hack
                 </CheckoutLink>
               </div>
             </div>
@@ -124,7 +139,7 @@ export function BlogPostPage({ slug }: BlogPostPageProps) {
               className="mt-10 inline-flex items-center gap-1.5 text-sm text-white/55 hover:text-white"
             >
               <ArrowLeft className="h-4 w-4" strokeWidth={1.75} />
-              All forum threads
+              Back to forum thread index
             </a>
           </div>
         </article>
@@ -132,9 +147,7 @@ export function BlogPostPage({ slug }: BlogPostPageProps) {
         {related.length > 0 ? (
           <section className="page-band page-x border-t border-white/10 py-12 sm:py-16">
             <div className="mx-auto max-w-6xl">
-              <h2 className="text-xl font-semibold tracking-tight text-white">
-                More forum threads
-              </h2>
+              <h2 className="text-xl font-semibold tracking-tight text-white">More forum threads</h2>
               <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {related.map((b) => (
                   <a
@@ -146,11 +159,9 @@ export function BlogPostPage({ slug }: BlogPostPageProps) {
                     <h3 className="mt-2 text-sm font-semibold text-white group-hover:text-white/85">
                       {b.title}
                     </h3>
-                    <p className="mt-2 flex-1 text-xs leading-relaxed text-white/50">
-                      {b.excerpt}
-                    </p>
+                    <p className="mt-2 flex-1 text-xs leading-relaxed text-white/50">{b.excerpt}</p>
                     <span className="mt-4 inline-flex items-center gap-1 text-xs font-medium text-white/70">
-                      Read
+                      Read thread
                       <ArrowRight className="h-3.5 w-3.5" strokeWidth={1.75} />
                     </span>
                   </a>

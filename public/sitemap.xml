@@ -5,7 +5,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://cs2hack.net/</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cs2hack.net/" />
@@ -38,7 +38,7 @@
   </url>
   <url>
     <loc>https://cs2hack.net/cs2-hack</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cs2hack.net/cs2-hack" />
@@ -84,7 +84,7 @@
   </url>
   <url>
     <loc>https://cs2hack.net/forums</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cs2hack.net/forums" />
@@ -109,12 +109,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cs2hack.net/forums/aimbot-settings" />
     <image:image>
       <image:loc>https://cs2hack.net/og/forums-aimbot-settings.jpg</image:loc>
-      <image:title>CS2 Aimbot Settings for Silent Aim Open Graph</image:title>
-      <image:caption>CS2 Aimbot settings for PC: silent aim, FOV, smoothing and visible-check so your CS2 hack looks legit on official and private servers. Start conservative, then save configs.</image:caption>
+      <image:title>CS2 Aimbot Settings for Silent Aim &amp; Smoothing Open Graph</image:title>
+      <image:caption>CS2 Aimbot settings for PC: silent aim, FOV, smoothing and visible-check so your CS2 hack looks legit on official and private servers.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://cs2hack.net/media/cs2-esp-street.png</image:loc>
-      <image:title>CS2 Aimbot Settings for Silent Aim Artwork</image:title>
+      <image:title>CS2 Aimbot Settings for Silent Aim &amp; Smoothing Artwork</image:title>
       <image:caption>Tune CS2 Aimbot FOV, smoothing, hitbox and silent aim so player tracking stays effective without looking robotic to spectating admins.</image:caption>
     </image:image>
   </url>
@@ -127,12 +127,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cs2hack.net/forums/complete-setup" />
     <image:image>
       <image:loc>https://cs2hack.net/og/forums-complete-setup.jpg</image:loc>
-      <image:title>Complete CS2 Hack Setup Open Graph</image:title>
-      <image:caption>Complete CS2 hack setup for Windows PC: buy when status is clear, antivirus exclusions, load order, first-run ESP and Aimbot config, then re-check VAC after every patch.</image:caption>
+      <image:title>Complete CS2 Hack Setup Guide - Loader Steps Open Graph</image:title>
+      <image:caption>Complete CS2 hack setup for Windows PC: buy when status is clear, antivirus exclusions, load order, first-run ESP and Aimbot config, then re-check VAC.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://cs2hack.net/media/cs2-wallhack-players.png</image:loc>
-      <image:title>Complete CS2 Hack Setup Artwork</image:title>
+      <image:title>Complete CS2 Hack Setup Guide - Loader Steps Artwork</image:title>
       <image:caption>Step-by-step CS2 hack setup: buy from $35, antivirus exclusions, load order, enable ESP and Aimbot, save configs, re-check VAC.</image:caption>
     </image:image>
   </url>
@@ -145,12 +145,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cs2hack.net/forums/disable-antivirus" />
     <image:image>
       <image:loc>https://cs2hack.net/og/forums-disable-antivirus.jpg</image:loc>
-      <image:title>Antivirus Exclusions for CS2 Hack Open Graph</image:title>
-      <image:caption>Allowlist CS2 hack loaders in Windows Defender and third-party antivirus before you load. Restore quarantines, exclude the delivery folder, then continue setup when status is clear.</image:caption>
+      <image:title>Antivirus Exclusions for CS2 Hack - Defender Open Graph</image:title>
+      <image:caption>Allowlist CS2 hack loaders in Windows Defender and third-party antivirus before you load. Restore quarantines, exclude the delivery folder, then continue.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://cs2hack.net/media/cs2-esp-street.png</image:loc>
-      <image:title>Antivirus Exclusions for CS2 Hack Artwork</image:title>
+      <image:title>Antivirus Exclusions for CS2 Hack - Defender Artwork</image:title>
       <image:caption>Allowlist CS2 hack in Windows Defender and common antivirus so the loader is not quarantined before first run.</image:caption>
     </image:image>
   </url>
@@ -163,12 +163,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cs2hack.net/forums/esp-wallhack-guide" />
     <image:image>
       <image:loc>https://cs2hack.net/og/forums-esp-wallhack-guide.jpg</image:loc>
-      <image:title>CS2 ESP and Wallhack Setup Open Graph</image:title>
+      <image:title>CS2 ESP and Wallhack Setup - Player Boxes &amp; Utility Open Graph</image:title>
       <image:caption>CS2 ESP and wallhack setup: player boxes, skeletons, distance, health, bomb and utility ESP through smokes. Clean HUD defaults for CS2 hack on PC.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://cs2hack.net/media/cs2-esp-street.png</image:loc>
-      <image:title>CS2 ESP and Wallhack Setup Artwork</image:title>
+      <image:title>CS2 ESP and Wallhack Setup - Player Boxes &amp; Utility Artwork</image:title>
       <image:caption>Configure CS2 ESP and wallhack for player boxes, utility tracking and utility highlighting without flooding your HUD.</image:caption>
     </image:image>
   </url>
@@ -181,12 +181,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cs2hack.net/forums/features-list" />
     <image:image>
       <image:loc>https://cs2hack.net/og/forums-features-list.jpg</image:loc>
-      <image:title>CS2 hack Features Checklist Open Graph</image:title>
-      <image:caption>CS2 hack features checklist: silent aim Aimbot, player ESP, bomb and utility ESP, wallhack, radar hack and spoofer on cs2hack.net from $35. Compare modules before you buy.</image:caption>
+      <image:title>CS2 hack Features Checklist - Aimbot, Radar Open Graph</image:title>
+      <image:caption>CS2 hack features checklist: silent aim Aimbot, player ESP, bomb and utility ESP, wallhack, radar hack and spoofer on cs2hack.net from $35.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://cs2hack.net/media/cs2-radar-skeleton.png</image:loc>
-      <image:title>CS2 hack Features Checklist Artwork</image:title>
+      <image:title>CS2 hack Features Checklist - Aimbot, Radar Artwork</image:title>
       <image:caption>Checklist of every CS2 hack module on cs2hack.net - silent aim, player ESP, bomb and utility ESP, wallhack, radar hack and spoofer - before you open checkout from $35.</image:caption>
     </image:image>
   </url>
@@ -199,12 +199,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cs2hack.net/forums/hotkeys" />
     <image:image>
       <image:loc>https://cs2hack.net/og/forums-hotkeys.jpg</image:loc>
-      <image:title>CS2 Hack Hotkeys After Load Open Graph</image:title>
-      <image:caption>CS2 hack hotkeys after checkout: open menu, Aimbot toggle, player ESP, bomb and utility ESP, radar hack and stream-proof binds. Keep panic keys minimal for field use.</image:caption>
+      <image:title>CS2 Hack Hotkeys - Menu, Aimbot Toggles After Load Open Graph</image:title>
+      <image:caption>CS2 hack hotkeys after checkout: open menu, Aimbot toggle, player ESP, bomb and utility ESP, radar hack and stream-proof binds.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://cs2hack.net/media/cs2-esp-street.png</image:loc>
-      <image:title>CS2 Hack Hotkeys After Load Artwork</image:title>
+      <image:title>CS2 Hack Hotkeys - Menu, Aimbot Toggles After Load Artwork</image:title>
       <image:caption>Menu and toggle hotkeys for CS2 hack after a clean load - Aimbot, ESP, bomb and utility ESP, radar and panic binds.</image:caption>
     </image:image>
   </url>
@@ -217,12 +217,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cs2hack.net/forums/loader-errors" />
     <image:image>
       <image:loc>https://cs2hack.net/og/forums-loader-errors.jpg</image:loc>
-      <image:title>Fix CS2 Hack Loader Errors Open Graph</image:title>
-      <image:caption>Fix CS2 hack loader errors on Windows: antivirus quarantine, overlays, failed inject and menu not opening. Confirm VAC status is clear first, then escalate with your order ID.</image:caption>
+      <image:title>Fix CS2 Hack Loader Errors - Inject &amp; Menu Open Graph</image:title>
+      <image:caption>Fix CS2 hack loader errors on Windows: antivirus quarantine, overlays, failed inject and menu not opening. Confirm VAC status is clear first, then.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://cs2hack.net/media/cs2-radar-skeleton.png</image:loc>
-      <image:title>Fix CS2 Hack Loader Errors Artwork</image:title>
+      <image:title>Fix CS2 Hack Loader Errors - Inject &amp; Menu Artwork</image:title>
       <image:caption>Troubleshoot CS2 hack loader errors - menu not opening, instant close, antivirus quarantine and failed inject.</image:caption>
     </image:image>
   </url>
@@ -235,12 +235,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cs2hack.net/forums/match-play-guide" />
     <image:image>
       <image:loc>https://cs2hack.net/og/forums-match-play-guide.jpg</image:loc>
-      <image:title>Safer CS2 hack Settings for Match Plays Open Graph</image:title>
-      <image:caption>Safer CS2 hack settings for matchmaking and Faceit-style servers: ESP-first play, mild silent aim, utility highlighting, radar hack and VAC habits that reduce report risk.</image:caption>
+      <image:title>Safer CS2 hack Settings for Match Plays Defaults Open Graph</image:title>
+      <image:caption>Match Plays: Safer CS2 hack settings for matchmaking and Faceit-style servers: ESP-first play, mild silent aim, utility highlighting, radar hack and VAC.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://cs2hack.net/media/cs2-esp-health.jpg</image:loc>
-      <image:title>Safer CS2 hack Settings for Match Plays Artwork</image:title>
+      <image:title>Safer CS2 hack Settings for Match Plays Defaults Artwork</image:title>
       <image:caption>Safer CS2 hack defaults for competitive matchmaking - ESP-first play, mild silent aim, radar awareness and report-conscious habits.</image:caption>
     </image:image>
   </url>
@@ -253,12 +253,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cs2hack.net/forums/radar-hack-guide" />
     <image:image>
       <image:loc>https://cs2hack.net/og/forums-radar-hack-guide.jpg</image:loc>
-      <image:title>CS2 Radar Hack Overlay Guide Open Graph</image:title>
+      <image:title>CS2 Radar Hack Screen Overlay for Off-Screen Players Open Graph</image:title>
       <image:caption>CS2 radar hack guide for PC: 2D radar overlay, off-screen enemy tracking and safer bombsite approaches. Pair with ESP so your CS2 hack stays readable.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://cs2hack.net/media/cs2-esp-street.png</image:loc>
-      <image:title>CS2 Radar Hack Overlay Guide Artwork</image:title>
+      <image:title>CS2 Radar Hack Screen Overlay for Off-Screen Players Artwork</image:title>
       <image:caption>Use the CS2 radar hack 2D overlay to track off-screen players, avoid third parties and approach bombsite safer.</image:caption>
     </image:image>
   </url>
@@ -271,12 +271,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cs2hack.net/forums/stream-proof-setup" />
     <image:image>
       <image:loc>https://cs2hack.net/og/forums-stream-proof-setup.jpg</image:loc>
-      <image:title>Stream-Proof CS2 Hack for OBS Open Graph</image:title>
-      <image:caption>Stream-proof CS2 hack for OBS and clips: keep ESP, wallhack and Aimbot overlays off recordings while you still see them locally. Test with a private capture first.</image:caption>
+      <image:title>Stream-Proof CS2 Hack for OBS - Safe Overlay Open Graph</image:title>
+      <image:caption>Stream-proof CS2 hack for OBS and clips: keep ESP, wallhack and Aimbot overlays off recordings while you still see them locally.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://cs2hack.net/media/cs2-wallhack-players.png</image:loc>
-      <image:title>Stream-Proof CS2 Hack for OBS Artwork</image:title>
+      <image:title>Stream-Proof CS2 Hack for OBS - Safe Overlay Artwork</image:title>
       <image:caption>Hide CS2 ESP, utility highlighting and Aimbot overlays from OBS and capture tools with stream-proof mode.</image:caption>
     </image:image>
   </url>
@@ -289,12 +289,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cs2hack.net/forums/undetected-status" />
     <image:image>
       <image:loc>https://cs2hack.net/og/forums-undetected-status.jpg</image:loc>
-      <image:title>VAC Status Checklist Before You Buy or Load Open Graph</image:title>
-      <image:caption>VAC status checklist for CS2 hack: confirm clear-to-load before checkout and before every post-patch session. Wait when Updating; buy from $35 when status is live.</image:caption>
+      <image:title>VAC Status Checklist Before You Buy CS2 Hack or Load Open Graph</image:title>
+      <image:caption>VAC status checklist for CS2 hack: confirm clear-to-load before checkout and before every post-patch session. Wait when Updating; buy from $35 when status.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://cs2hack.net/media/cs2-radar-skeleton.png</image:loc>
-      <image:title>VAC Status Checklist Before You Buy or Load Artwork</image:title>
+      <image:title>VAC Status Checklist Before You Buy CS2 Hack or Load Artwork</image:title>
       <image:caption>Short VAC status checklist for CS2 hack - confirm clear-to-load before checkout and before every post-patch session.</image:caption>
     </image:image>
   </url>
@@ -325,18 +325,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cs2hack.net/forums/windows-setup" />
     <image:image>
       <image:loc>https://cs2hack.net/og/forums-windows-setup.jpg</image:loc>
-      <image:title>CS2 Hack on Windows 10 and 11 Open Graph</image:title>
+      <image:title>CS2 Hack on Windows 10 and 11 - Setup Guide Open Graph</image:title>
       <image:caption>Windows 10 and 11 setup for CS2 hack: close overlays, add Defender exclusions, launch with correct permissions and run a clean first load against VAC.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://cs2hack.net/media/cs2-wallhack-players.png</image:loc>
-      <image:title>CS2 Hack on Windows 10 and 11 Artwork</image:title>
+      <image:title>CS2 Hack on Windows 10 and 11 - Setup Guide Artwork</image:title>
       <image:caption>Windows 10/11 prep for CS2 hack - overlays, Defender exclusions, admin rights and a clean first launch against VAC.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://cs2hack.net/reviews</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cs2hack.net/reviews" />
@@ -349,7 +349,7 @@
   </url>
   <url>
     <loc>https://cs2hack.net/faq</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cs2hack.net/faq" />
@@ -362,7 +362,7 @@
   </url>
   <url>
     <loc>https://cs2hack.net/support</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cs2hack.net/support" />
@@ -375,7 +375,7 @@
   </url>
   <url>
     <loc>https://cs2hack.net/privacy</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cs2hack.net/privacy" />
@@ -388,7 +388,7 @@
   </url>
   <url>
     <loc>https://cs2hack.net/refunds</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.45</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cs2hack.net/refunds" />
@@ -400,8 +400,21 @@
     </image:image>
   </url>
   <url>
+    <loc>https://cs2hack.net/sitemap.xml</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cs2hack.net/sitemap.xml" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cs2hack.net/sitemap.xml" />
+    <image:image>
+      <image:loc>https://cs2hack.net/og/home.jpg</image:loc>
+      <image:title>cs2hack.net sitemap</image:title>
+      <image:caption>XML sitemap listing indexable pages on cs2hack.net.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://cs2hack.net/terms</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://cs2hack.net/terms" />

@@ -20,7 +20,7 @@ export function SupportPage() {
               {SITE_NAME} · Help
             </p>
             <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-              CS2 Hack Support
+              CS2 Hack Support — Menu, Delivery, Setup Help
             </h1>
             <p className="mt-4 text-base leading-relaxed text-white/60">{SUPPORT_INTRO}</p>
             <p className="mt-3 text-sm text-white/45">
@@ -29,14 +29,14 @@ export function SupportPage() {
                 href="/forums"
                 className="text-z-soft underline-offset-2 hover:text-white hover:underline"
               >
-                forums
+                setup forum index
               </a>
               . Start with{' '}
               <a
                 href={blogPath('complete-setup')}
                 className="text-z-soft underline-offset-2 hover:text-white hover:underline"
               >
-                complete setup
+                full loader setup walkthrough
               </a>{' '}
               before opening a ticket.
             </p>

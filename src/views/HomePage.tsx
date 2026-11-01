@@ -66,7 +66,7 @@ export function HomePage() {
       <section id="home" className="relative flex min-h-screen flex-col overflow-x-clip">
         <VideoBg
           image="/media/cs2-hero-poster.jpg"
-          imageAlt="Counter-Strike 2 first-person gameplay highlight on the homepage hero"
+          imageAlt="Esp Wallhack – Counter-Strike 2 first-person gameplay highlight on the homepage hero"
           video="/videos/cs2-hero-loop.mp4"
         />
 
@@ -291,11 +291,11 @@ export function HomePage() {
                   </a>
                   ,{' '}
                   <a href="/reviews" className="text-white/80 underline-offset-2 hover:underline">
-                    reviews
+                    buyer ratings page
                   </a>
                   , or{' '}
                   <a href="/support" className="text-white/80 underline-offset-2 hover:underline">
-                    loader help
+                    loader help desk
                   </a>
                   .
                 </p>

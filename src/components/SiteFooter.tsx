@@ -4,6 +4,7 @@ import {
   SITE_GUIDE_LINKS,
   SITE_PAGE_LINKS,
 } from '../data/links'
+import { SocialShare } from './SocialShare'
 import { SITE_NAME } from '../data/site'
 
 type SiteFooterProps = {
@@ -126,23 +127,25 @@ export function SiteFooter({ currentPath }: SiteFooterProps) {
               <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm text-white/55">
                 <li>
                   <a href="/privacy" className="hover:text-white">
-                    Privacy
+                    Privacy policy
                   </a>
                 </li>
                 <li>
                   <a href="/terms" className="hover:text-white">
-                    Terms
+                    Terms of use
                   </a>
                 </li>
                 <li>
                   <a href="/refunds" className="hover:text-white">
-                    Refunds
+                    Refund policy
                   </a>
                 </li>
               </ul>
             </div>
           </nav>
         </div>
+
+        {path ? <SocialShare path={path} title={`${SITE_NAME} on cs2hack.net`} /> : null}
 
         <p className="mt-10 border-t border-z-soft/10 pt-6 text-xs text-white/35">
           © {new Date().getFullYear()} {SITE_NAME}. Not affiliated with Valve or Counter-Strike 2.

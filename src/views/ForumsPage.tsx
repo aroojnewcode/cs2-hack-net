@@ -33,7 +33,7 @@ export function ForumsPage({ initialQuery = '' }: ForumsPageProps) {
       <section className="relative flex min-h-[60vh] flex-col overflow-x-clip sm:min-h-[65vh]">
         <VideoBg
           image="/media/cs2-esp-street.png"
-          imageAlt="Counter-Strike 2 ESP on a Mirage street with player names, weapons and health in the distance"
+          imageAlt="Vac Status – Counter-Strike 2 ESP on a Mirage street with player names, weapons and health in the distance"
         />
         <div className="relative z-20 flex min-h-[60vh] flex-col sm:min-h-[65vh]">
           <Navbar onVideo />
@@ -43,11 +43,11 @@ export function ForumsPage({ initialQuery = '' }: ForumsPageProps) {
                 Forums · Setup · {SITE_HOST}
               </p>
               <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-                CS2 Hack Guides
+                Vac Status: CS2 Hack Guides — Aimbot, ESP, Radar
               </h1>
               <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/70">
-                Setup threads for CS2 Hack — features, hotkeys, complete setup,
-                disable antivirus, how to load, and live VAC status before you checkout.
+                VAC status threads for CS2 Hack — features, hotkeys, complete setup, disable antivirus,
+                loader steps, and live status before you checkout.
               </p>
               <div className="relative z-50 mt-7">
                 <HeroSearch

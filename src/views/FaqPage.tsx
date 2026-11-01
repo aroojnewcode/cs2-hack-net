@@ -19,10 +19,10 @@ export function FaqPage() {
               {SITE_NAME}
             </p>
             <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-              CS2 Hack FAQ
+              CS2 Hack FAQ — Price, VAC Status & Setup
             </h1>
             <p className="mt-4 text-base leading-relaxed text-white/60">
-              VAC status, ESP, Aimbot, radar hack, servers, buying, loading, support and
+              This faq covers VAC status, ESP, Aimbot, radar hack, servers, buying, loading, support and
               refunds — straight answers before you checkout.
             </p>
           </div>
@@ -34,7 +34,7 @@ export function FaqPage() {
               id="faq-heading"
               className="mb-6 text-lg font-semibold tracking-tight text-white sm:text-xl"
             >
-              All questions
+              Faq: All questions
             </h2>
 
             <div className="divide-y divide-white/10 border-y border-white/10">

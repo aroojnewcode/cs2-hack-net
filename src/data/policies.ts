@@ -18,15 +18,15 @@ export const POLICY_PAGES: PolicyPageContent[] = [
   {
     slug: 'privacy',
     path: '/privacy',
-    title: 'Privacy Policy | CS2 Hack PC',
+    title: 'Privacy – support messages and basic site analytics for CS2',
     description:
-      'How cs2hack.net handles order details, delivery email, support messages and basic site analytics for CS2 hack.',
+      'Privacy: How cs2hack.net handles order details, delivery email, support messages and basic site analytics for CS2 hack. CS2 Hack · Policy · cs2hack.',
     h1: 'CS2 Hack Privacy Policy',
     intro:
-      'This page explains what we collect when you browse cs2hack.net, buy a CS2 Hack license, or contact support — and what we do not collect.',
+      'This privacy page explains what we collect when you browse cs2hack.net, buy a CS2 Hack license, or contact support — and what we do not collect.',
     sections: [
       {
-        heading: 'What we collect',
+        heading: 'Privacy: What we collect',
         body: [
           'Checkout is handled by our payment partner. We receive the information needed to fulfill your order: email address, order ID, license duration, and payment status.',
           'If you write to support, we keep the message thread, order ID, and any screenshots you attach so we can troubleshoot loader or delivery issues.',
@@ -58,9 +58,9 @@ export const POLICY_PAGES: PolicyPageContent[] = [
       },
     ],
     related: [
-      { label: 'Terms of Use', to: '/terms' },
-      { label: 'Refunds', to: '/refunds' },
-      { label: 'Support', to: '/support' },
+      { label: 'Read terms of use', to: '/terms' },
+      { label: 'Refund policy', to: '/refunds' },
+      { label: 'Open support desk', to: '/support' },
     ],
   },
   {
