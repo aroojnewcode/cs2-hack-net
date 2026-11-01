@@ -122,7 +122,7 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'esp-wallhack-guide',
-    title: 'CS2 ESP and Wallhack Setup — Player Boxes & Utility',
+    title: 'Esp — Clean HUD defaults for CS2 hack on cs2hack — Player Boxes & Utility',
     excerpt:
       'Configure CS2 ESP and wallhack for player boxes, utility tracking and utility highlighting without flooding your HUD.',
     metaTitle: 'Esp – Clean HUD defaults for CS2 hack on PC | cs2hack',
@@ -440,7 +440,7 @@ export const BLOGS: BlogPost[] = [
     tag: 'Status',
     sections: [
       {
-        heading: 'Before checkout',
+        heading: 'Checklist: Before checkout',
         body: [
           'Confirm clear-to-load status on the homepage or product page. If Updating, wait or read Refunds for extended downtime. Prices start from $35 when status is live.',
         ],

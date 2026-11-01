@@ -59,7 +59,7 @@ export const POLICY_PAGES: PolicyPageContent[] = [
     ],
     related: [
       { label: 'Read terms of use', to: '/terms' },
-      { label: 'Refund policy', to: '/refunds' },
+      { label: 'When refunds apply', to: '/refunds' },
       { label: 'Open support desk', to: '/support' },
     ],
   },
