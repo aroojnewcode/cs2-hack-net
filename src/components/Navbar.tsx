@@ -4,13 +4,22 @@ import { LogoMark } from './LogoMark'
 import { CheckoutLink } from './CheckoutLink'
 import { PRODUCT_PATH, SITE_NAME } from '../data/site'
 
-/** Lean nav — Reviews stay in footer. */
+/** Desktop header nav (unique anchors vs mobile drawer + footer). */
 const NAV_LINKS = [
   { label: 'Setup forums', to: '/forums' },
   { label: 'Price & checkout', to: PRODUCT_PATH },
   { label: 'Buyer ratings', to: '/reviews' },
   { label: 'Common questions', to: '/faq' },
   { label: 'Help desk', to: '/support' },
+] as const
+
+/** Same routes as NAV_LINKS — different anchor text so crawlers do not see duplicates. */
+const MOBILE_NAV_LINKS = [
+  { label: 'Forum hub', to: '/forums' },
+  { label: 'Checkout & pricing', to: PRODUCT_PATH },
+  { label: 'Review scores', to: '/reviews' },
+  { label: 'FAQ hub', to: '/faq' },
+  { label: 'Contact support', to: '/support' },
 ] as const
 
 type NavbarProps = {
@@ -94,9 +103,9 @@ export function Navbar({ onVideo: _onVideo = false }: NavbarProps) {
           >
             Site home
           </a>
-          {NAV_LINKS.map((link, index) => (
+          {MOBILE_NAV_LINKS.map((link, index) => (
             <a
-              key={link.label}
+              key={link.to}
               href={link.to}
               onClick={() => setMenuOpen(false)}
               className="rounded-xl px-4 py-3 text-base font-medium text-z-ink/80 transition-all hover:bg-z-accent/15 hover:text-z-ink"

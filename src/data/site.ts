@@ -129,7 +129,7 @@ export const SEO = {
 } as const satisfies Record<string, PageSeo>
 
 export const HOME_HEADINGS = {
-  h1: 'CS2 Hack — Counter-Strike 2 Aimbot, ESP & Wallhack',
+  h1: 'Esp Wallhack — Counter-Strike 2 cheats for Windows 10/11 · Aimbot, ESP & Wallhack',
   h2Features: 'CS2 Aimbot, ESP, wallhack & radar',
   h2Featured: 'CS2 ESP and silent aim Aimbot',
   h2About: 'Check VAC status before you buy a CS2 hack',

@@ -4,6 +4,7 @@ import { SiteFooter } from '../components/SiteFooter'
 import { getReviewsAggregate, REVIEWS } from '../data/reviews'
 import { CheckoutLink } from '../components/CheckoutLink'
 import { PRODUCT_PATH, SITE_NAME } from '../data/site'
+import { getPageImage } from '../data/images'
 
 function Stars({ rating }: { rating: number }) {
   return (
@@ -44,6 +45,17 @@ export function ReviewsPage() {
             <p className="mt-4 text-sm text-white/45" aria-label="Aggregate rating">
               Average {aggregate.ratingValue} / 5 · {aggregate.reviewCount} reviews
             </p>
+            <figure className="mt-8 overflow-hidden rounded-2xl border border-white/10">
+              <img
+                src={getPageImage('reviews').src}
+                alt={getPageImage('reviews').alt}
+                width={1200}
+                height={630}
+                loading="lazy"
+                decoding="async"
+                className="aspect-video w-full object-cover"
+              />
+            </figure>
           </div>
         </section>
 

@@ -22,10 +22,10 @@ export const IMAGE_SEO: Record<
   }
 > = {
   cs2: {
-    alt: 'Counter-Strike 2 radar hack and skeleton ESP showing players through a stone wall',
+    alt: 'Cs2 Hacks – Counter-Strike 2 radar hack and skeleton ESP showing players through a stone wall',
     title: 'CS2 radar and skeleton ESP',
     caption: 'Radar overlay and skeleton ESP on the product page.',
-    heroAlt: 'Counter-Strike 2 radar hack and skeleton ESP showing players through a stone wall',
+    heroAlt: 'Cs2 Hacks – Counter-Strike 2 radar hack and skeleton ESP showing players through a stone wall',
     heroTitle: 'CS2 radar and skeleton ESP',
     heroCaption: 'Radar overlay and skeleton ESP showing players through a wall.',
   },
@@ -76,7 +76,7 @@ export const PAGE_IMAGES: Record<
   product: {
     src: CS2_COVER,
     og: PAGE_OG.product,
-    alt: 'Counter-Strike 2 radar hack and skeleton ESP showing players through a stone wall',
+    alt: 'Cs2 Hacks – Counter-Strike 2 radar hack and skeleton ESP showing players through a stone wall',
     title: 'CS2 radar and skeleton ESP',
     caption: 'Radar overlay and skeleton ESP showing players through a wall.',
   },

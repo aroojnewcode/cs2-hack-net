@@ -43,7 +43,7 @@ export function ForumsPage({ initialQuery = '' }: ForumsPageProps) {
                 Forums · Setup · {SITE_HOST}
               </p>
               <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-                Vac Status: CS2 Hack Guides — Aimbot, ESP, Radar
+                Vac Status: CS2 Hack forum threads — Aimbot, ESP, Radar (13 threads)
               </h1>
               <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/70">
                 VAC status threads for CS2 Hack — features, hotkeys, complete setup, disable antivirus,

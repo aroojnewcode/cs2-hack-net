@@ -107,7 +107,7 @@ export function GameProductPage({ guideSlug }: GameProductPageProps) {
                 </span>
 
                 <h1 className="mt-3 text-2xl font-semibold leading-tight tracking-tight text-white sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
-                  CS2 Hack Price & Checkout — Aimbot, Radar
+                  Cs2 Hacks — Undetected Counter-Strike 2 checkout · Aimbot, Radar · cs2hack
                 </h1>
                 <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/55 sm:mt-4 sm:text-base">
                   Silent aim Aimbot, player ESP, wallhack and radar for Counter-Strike 2 on PC.

@@ -4,6 +4,7 @@ import { SiteFooter } from '../components/SiteFooter'
 import { SITE_FAQS } from '../data/faqs'
 import { CheckoutLink } from '../components/CheckoutLink'
 import { SITE_NAME } from '../data/site'
+import { getPageImage } from '../data/images'
 
 export function FaqPage() {
   return (
@@ -19,8 +20,19 @@ export function FaqPage() {
               {SITE_NAME}
             </p>
             <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-              CS2 Hack FAQ — Price, VAC Status & Setup
+              CS2 Hack FAQ — Counter-Strike 2 tool on cs2hack · Price, VAC Status & Setup
             </h1>
+            <figure className="mt-8 overflow-hidden rounded-2xl border border-white/10">
+              <img
+                src={getPageImage('faq').src}
+                alt={getPageImage('faq').alt}
+                width={1200}
+                height={630}
+                loading="lazy"
+                decoding="async"
+                className="aspect-video w-full object-cover"
+              />
+            </figure>
             <p className="mt-4 text-base leading-relaxed text-white/60">
               This faq covers VAC status, ESP, Aimbot, radar hack, servers, buying, loading, support and
               refunds — straight answers before you checkout.

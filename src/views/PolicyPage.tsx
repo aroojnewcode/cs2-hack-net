@@ -2,6 +2,7 @@ import { Navbar } from '../components/Navbar'
 import { SiteFooter } from '../components/SiteFooter'
 import { SITE_HOST, SITE_NAME } from '../data/site'
 import type { PolicyPageContent } from '../data/policies'
+import { PAGE_OG } from '../data/og'
 
 type PolicyPageProps = {
   page: PolicyPageContent
@@ -24,6 +25,19 @@ export function PolicyPage({ page }: PolicyPageProps) {
               {page.h1}
             </h1>
             <p className="mt-4 text-base leading-relaxed text-white/55">{page.intro}</p>
+            {page.slug === 'privacy' ? (
+              <figure className="mt-8 overflow-hidden rounded-2xl border border-white/10">
+                <img
+                  src={PAGE_OG.privacy}
+                  alt="CS2 Hack privacy policy — how cs2hack.net handles order and support data"
+                  width={1200}
+                  height={630}
+                  loading="lazy"
+                  decoding="async"
+                  className="aspect-video w-full object-cover"
+                />
+              </figure>
+            ) : null}
           </div>
         </section>
 

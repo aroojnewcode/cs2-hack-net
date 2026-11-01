@@ -25,7 +25,7 @@ export type BlogPost = {
 export const BLOGS: BlogPost[] = [
   {
     slug: 'features-list',
-    title: 'CS2 hack Features Checklist — Aimbot, Radar',
+    title: 'CS2 hack Features — silent aim, player ESP, bomb and utility — Aimbot, Radar',
     excerpt:
       'Checklist of every CS2 hack module on cs2hack.net — silent aim, player ESP, bomb and utility ESP, wallhack, radar hack and spoofer — before you open checkout from $35.',
     metaTitle: 'Features – net — silent aim, player ESP, bomb and utility',
@@ -76,7 +76,7 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'aimbot-settings',
-    title: 'CS2 Aimbot Settings for Silent Aim & Smoothing',
+    title: 'CS2 Aimbot Settings — Silent Aim, Smoothing & Visible-Check',
     excerpt:
       'Tune CS2 Aimbot FOV, smoothing, hitbox and silent aim so player tracking stays effective without looking robotic to spectating admins.',
     metaTitle: 'Aimbot Settings – smoothing and visible-check so your CS2',
@@ -125,7 +125,7 @@ export const BLOGS: BlogPost[] = [
     title: 'CS2 ESP and Wallhack Setup — Player Boxes & Utility',
     excerpt:
       'Configure CS2 ESP and wallhack for player boxes, utility tracking and utility highlighting without flooding your HUD.',
-    metaTitle: 'CS2 ESP Wallhack Setup | Player Boxes & Utility',
+    metaTitle: 'Esp – Clean HUD defaults for CS2 hack on PC | cs2hack',
     metaDescription:
       'CS2 ESP and wallhack setup: player boxes, skeletons, distance, health, bomb and utility ESP through smokes. Clean HUD defaults for CS2 hack on PC.',
     searchTerms: 'cs2 esp wallhack cs2 hack player boxes utility esp bomb esp cs2 cheat',
@@ -166,7 +166,7 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'radar-hack-guide',
-    title: 'CS2 Radar Hack Screen Overlay for Off-Screen Players',
+    title: 'CS2 Radar Hack Guide — Screen Overlay for Off-Screen Players',
     excerpt:
       'Use the CS2 radar hack 2D overlay to track off-screen players, avoid third parties and approach bombsite safer.',
     metaTitle: 'CS2 Radar Hack Guide | 2D Overlay for Off-Screen Players',
@@ -202,7 +202,7 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'hotkeys',
-    title: 'CS2 Hack Hotkeys — Menu, Aimbot Toggles After Load',
+    title: 'Hotkeys — after a clean load on cs2hack — Menu, Aimbot Toggles',
     excerpt:
       'Menu and toggle hotkeys for CS2 hack after a clean load — Aimbot, ESP, bomb and utility ESP, radar and panic binds.',
     metaTitle: 'Hotkeys – After a clean load Buy CS2 Hack on cs2hack',
@@ -238,7 +238,7 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'complete-setup',
-    title: 'Complete CS2 Hack Setup Guide — Loader Steps',
+    title: 'Complete CS2 Hack Setup — if status is Updating after VAC patch, wait — Loader Steps',
     excerpt:
       'Step-by-step CS2 hack setup: buy from $35, antivirus exclusions, load order, enable ESP and Aimbot, save configs, re-check VAC.',
     metaTitle: 'Setup – If status is Updating after a VAC patch, wait',
@@ -282,7 +282,7 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'windows-setup',
-    title: 'CS2 Hack on Windows 10 and 11 — Setup Guide',
+    title: 'Windows — launch with correct permissions for a clean CS2 Hack setup guide',
     excerpt:
       'Windows 10/11 prep for CS2 hack — overlays, Defender exclusions, admin rights and a clean first launch against VAC.',
     metaTitle: 'Windows – launch with correct permissions and run a clean',
@@ -317,7 +317,7 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'disable-antivirus',
-    title: 'Antivirus Exclusions for CS2 Hack — Defender',
+    title: 'Antivirus — then continue setup when status is clear — CS2 Hack Defender exclusions',
     excerpt:
       'Allowlist CS2 hack in Windows Defender and common antivirus so the loader is not quarantined before first run.',
     metaTitle: 'Antivirus – then continue setup when status is clear',
@@ -352,7 +352,7 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'stream-proof-setup',
-    title: 'Stream-Proof CS2 Hack for OBS — Safe Overlay',
+    title: 'Stream-Proof CS2 Hack — wallhack, Aimbot overlays off recordings — Safe OBS overlay',
     excerpt:
       'Hide CS2 ESP, utility highlighting and Aimbot overlays from OBS and capture tools with stream-proof mode.',
     metaTitle: 'Stream Proof – wallhack and Aimbot overlays off recordings',
@@ -387,7 +387,7 @@ export const BLOGS: BlogPost[] = [
   },
     {
     slug: 'vac-status',
-    title: 'CS2 VAC Status: Clear to Load vs Updating',
+    title: 'CS2 VAC Status — admin bans differ from anti-cheat — Clear to Load vs Updating',
     excerpt:
       'What clear-to-load and Updating mean for CS2 hack after VAC and game patches — and why admin bans are a separate risk.',
     metaTitle: 'Status – and how admin bans differ from anti-cheat',
@@ -428,10 +428,10 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'undetected-status',
-    title: 'VAC Status Checklist Before You Buy CS2 Hack or Load',
+    title: 'Checklist — confirm clear-to-load before checkout — VAC Status for CS2 Hack',
     excerpt:
       'Short VAC status checklist for CS2 hack — confirm clear-to-load before checkout and before every post-patch session.',
-    metaTitle: 'Checklist – confirm clear-to-load before checkout and before',
+    metaTitle: 'Checklist – confirm clear-to-load before checkout and',
     metaDescription:
       'VAC status checklist for CS2 hack: confirm clear-to-load before checkout and before every post-patch session. Wait when Updating; buy from $35 when status.',
     searchTerms: 'cs2 hack status checklist before buy load vac undetected cs2 hack',
@@ -461,7 +461,7 @@ export const BLOGS: BlogPost[] = [
   },
 {
     slug: 'match-play-guide',
-    title: 'Safer CS2 hack Settings for Match Plays Defaults',
+    title: 'Safer CS2 hack Settings for Match Plays — matchmaking defaults',
     excerpt:
       'Safer CS2 hack defaults for competitive matchmaking — ESP-first play, mild silent aim, radar awareness and report-conscious habits.',
     metaTitle: 'Match Plays – Safer CS2 hack settings for matchmaking and',
@@ -497,7 +497,7 @@ export const BLOGS: BlogPost[] = [
   },
   {
     slug: 'loader-errors',
-    title: 'Fix CS2 Hack Loader Errors — Inject & Menu',
+    title: 'Fix CS2 Hack Loader Errors — failed inject & menu not opening',
     excerpt:
       'Troubleshoot CS2 hack loader errors — menu not opening, instant close, antivirus quarantine and failed inject.',
     metaTitle: 'Cs2 Hack Loader Errors – failed inject and menu not opening',

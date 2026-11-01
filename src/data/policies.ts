@@ -21,7 +21,7 @@ export const POLICY_PAGES: PolicyPageContent[] = [
     title: 'Privacy – support messages and basic site analytics for CS2',
     description:
       'Privacy: How cs2hack.net handles order details, delivery email, support messages and basic site analytics for CS2 hack. CS2 Hack · Policy · cs2hack.',
-    h1: 'CS2 Hack Privacy Policy',
+    h1: 'Privacy — support messages, basic site analytics for CS2 Hack',
     intro:
       'This privacy page explains what we collect when you browse cs2hack.net, buy a CS2 Hack license, or contact support — and what we do not collect.',
     sections: [

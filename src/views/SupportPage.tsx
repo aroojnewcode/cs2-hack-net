@@ -5,6 +5,7 @@ import { CheckoutLink } from '../components/CheckoutLink'
 import { PRODUCT_PATH, SITE_NAME } from '../data/site'
 import { SUPPORT_FAQS, SUPPORT_INTRO, SUPPORT_TOPICS } from '../data/support'
 import { blogPath } from '../data/blogs'
+import { getPageImage } from '../data/images'
 
 export function SupportPage() {
   return (
@@ -20,8 +21,19 @@ export function SupportPage() {
               {SITE_NAME} · Help
             </p>
             <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-              CS2 Hack Support — Menu, Delivery, Setup Help
+              Support — buying and opening the CS2 hack — Menu, Delivery, Setup Help
             </h1>
+            <figure className="mt-8 overflow-hidden rounded-2xl border border-white/10">
+              <img
+                src={getPageImage('support').src}
+                alt={getPageImage('support').alt}
+                width={1200}
+                height={630}
+                loading="lazy"
+                decoding="async"
+                className="aspect-video w-full object-cover"
+              />
+            </figure>
             <p className="mt-4 text-base leading-relaxed text-white/60">{SUPPORT_INTRO}</p>
             <p className="mt-3 text-sm text-white/45">
               Setup guides live in the{' '}
